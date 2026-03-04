@@ -1,0 +1,177 @@
+[
+  {
+    "section": "Reasoning Ability",
+    "question": "Identify the letter cluster that does not belong to the following series: FSN, HOP, JLR, LGT, NCV FUB(Fill up the blanks)",
+    "options": [],
+    "answer": "JLR",
+    "source": "TCS-NQT-Paper-4.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "A question is given, followed by two statements labelled I and II. Identify which of statements is/are sufficient to answer the question. Question: what is code for ‘pretty’ in the code language Statements: - ‘ma ka ki’ means ‘They are pretty’. - ‘ka ku pa pu’ means ‘We are not happy’.",
+    "options": [
+      "Statement II alone is sufficient, while statement I alone is not sufficient.",
+      "Both statements l and II together are not sufficient to answer the question",
+      "Statement I alone is sufficient, while statement II alone is not sufficient",
+      "Either statement I alone or statement II alone is sufficient,",
+      "FHJ",
+      "LOR",
+      "WZC",
+      "TVX",
+      "PFDNYXJMP: NDFPYXPMJ",
+      "BNGKSTEUS: KGNBSUTSE",
+      "YKDZPDXGN: ZDKYPXNDG",
+      "QONXIWPNM: XNQOIWPNM",
+      "b, d, and e",
+      "a, b, and d",
+      "b, c, and e",
+      "a, b, and c",
+      "+,%,$",
+      "*,$,",
+      ",+,$",
+      "+,$,",
+      "The share of Charan is 40% less than the sum of the shares of Anand and Barun",
+      "The difference between Barun’s share and Charan’s share is Rs 4.",
+      "The share of Charan is greater than the share of Barun",
+      "Either statements I and II together or statements II and Ill together are sufficient",
+      "Moderate level of physical activity is recommended for leading a healthy life.",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Neither conclusion I nor II follows",
+      "Only conclusion Il follows",
+      "There must be at least three medical experts in the team.",
+      "If B is selcted, J must also be selected",
+      "E and L have to be selected together.",
+      "D and J cannot come together in the team,",
+      "A can be selected only if K is also selected and vice-versa.",
+      "FGJBDH",
+      "LAJKBE",
+      "BEAKFJ",
+      "DOJEHL"
+    ],
+    "answer": "LAJKBE",
+    "source": "TCS-NQT-Paper-4.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Three persons Pardhu, Qureshi and Rajesh independently try to hit a target. If the probabilities of them hitting the target are 1/4, 2/3 and 5/12, respectively, then the probability that the target is hit by Qureshi or Rajesh but Not by Pardhu is:",
+    "options": [
+      "7/",
+      "29/",
+      "5/",
+      "5/"
+    ],
+    "answer": "29/",
+    "source": "TCS-NQT-Paper-4.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Three plane mirrors of size 10cm x 3cm are used to construct a kaleidoscope by attaching each pair of mirrors along their lengths. What is the total volume occupied by the kaleidoscope?",
+    "options": [
+      "45√2/",
+      "45√3/",
+      "45/",
+      "45√3cm3"
+    ],
+    "answer": "45√3/",
+    "source": "TCS-NQT-Paper-4.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "If α and β are the roots of the quadratic equation x2+x+2=0, and if α + β = 1, then which of the following pairs represents the roots (α, β)? - ±1, ±1 - ±3, ±3 - ±4, ±2 - ±2, ±2",
+    "options": [],
+    "answer": "±3, ±3",
+    "source": "TCS-NQT-Paper-4.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "There are 10 men and 11 women in an office. In how many ways can a team of 5 men and 5 women be selected?",
+    "options": [],
+    "answer": "1,16,424",
+    "source": "TCS-NQT-Paper-4.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "The sum of two numbers is 27 and the product is 182. The large number is",
+    "options": [],
+    "answer": "14",
+    "source": "TCS-NQT-Paper-4.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Number of employees working in various departments of ABC company limited over 6 years? Departments (Number of employees) Years Production Marketing Corporate Accounts Research 2011 180 35 45 40 80 2012 215 36 40 60 71 2013 420 62 25 85 70 2014 460 70 35 95 75 2015 525 75 36 125 78 2016 510 70 38 120 80 In which department did the number of employees (approximately) remain the same? Options",
+    "options": [
+      "Production",
+      "Accounts",
+      "Research",
+      "Marketing"
+    ],
+    "answer": "Research",
+    "source": "TCS-NQT-Paper-4.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Number of employees working in various departments of ABC company limited over 6 years? Departments (Number of employees) Years Production Marketing Corporate Accounts Research 2011 180 35 45 40 80 2012 215 36 40 60 71 2013 420 62 25 85 70 2014 460 70 35 95 75 2015 525 75 36 125 78 2016 510 70 38 120 80 In which year the total number of employees reached approximately twice the total number of employees than the company had in the year 2011? Options",
+    "options": [
+      "2014",
+      "2012",
+      "2016",
+      "2013"
+    ],
+    "answer": "2014",
+    "source": "TCS-NQT-Paper-4.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "If the inequality ∣x-3∣−2∣x-3∣−3≤0 ∣x-3∣−3∣x-3∣−2 ≤0, then the range of x is",
+    "options": [
+      "(0,1] U [5,6)",
+      "(0,1] U [4,5)",
+      "(-1,1) U (2,3)",
+      "[0,1] U [5,6]"
+    ],
+    "answer": "[0,1] U [5,6]",
+    "source": "TCS-NQT-Paper-4.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "If the αα and <b>β</b><b>β</b> are the roots of a monic quadratic polynomial such that αβ+βα<b> =2</b> βα + αβ <b> =2</b> and <b>α3+ α2β+αβ2−β3=54</b><b>α 3 + α 2 β+αβ 2 −β 3 =54</b> . Then what is the constant term of the equation",
+    "options": [],
+    "answer": "α =β=3α =β=3",
+    "source": "TCS-NQT-Paper-4.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Number of employees working in various departments of ABC company limited over 6 years? Departments (Nmber of employees) Years Production Marketing Corporate Accounts Research 2011 180 35 45 40 80 2012 215 36 40 60 71 2013 420 62 25 85 70 2014 460 70 35 95 75 2015 525 75 36 125 78 2016 510 70 38 120 80 Which department has less than 9% employees through all the 6 years? Options",
+    "options": [
+      "Production",
+      "Marketing",
+      "Research",
+      "Accounts",
+      "Manini is 11th from the left end of the row and 7th to the left of Divya.",
+      "Prerana is 15th from the right end of the row and 9th to the right of Divya.",
+      "Neither data in statement I nor II is sufficient",
+      "Data in statement Il alone is sufficient",
+      "Data in statement I alone is sufficient",
+      "Data in both statements I and II together are necessary",
+      "Kavish, Raman and Harsh are creative.",
+      "ii Kavish, Preet and Joy are humble",
+      "iii. Preet, Harsh and Joy are independent",
+      "Kavish, Raman and Joy are courageous.",
+      "Raman",
+      "Harsh",
+      "Kavish",
+      "Preet",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "A is true but R is false.",
+      "A is false but R is true.",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "UBPJDJQU",
+      "BQUSJPDUJ",
+      "DJUPJSUBQ",
+      "UBQPJSDJU"
+    ],
+    "answer": "UBQPJSDJU",
+    "source": "TCS-NQT-Paper-4.pdf"
+  }
+]

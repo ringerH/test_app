@@ -1,0 +1,572 @@
+[
+  {
+    "section": "Numerical Ability",
+    "question": "The reciprocal of a fraction is more than itself by 21/240. How much is the difference between the possible values of the fraction more than 2?",
+    "options": [
+      "1/15",
+      "1/16",
+      "1/240",
+      "1/256"
+    ],
+    "answer": "C",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "A person invested ⅔ of his capital at the rate of 6% and ⅕ at the rate of 10% and the remainder at the rate of 15%. If his actual income is 3,600 the capital will be: Option",
+    "options": [
+      "Rs. 5000",
+      "Rs. 2500",
+      "Rs. 7,500",
+      "Rs. 4,500"
+    ],
+    "answer": "45000",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "If 8^x+1 + 8^1-x = 20, then x = ?",
+    "options": [
+      "¼, -¼",
+      "½. -½",
+      "⅓, -⅓",
+      "⅕, -⅕"
+    ],
+    "answer": "c ⅓, -⅓",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "At an academic institution the break-up of holidays in 2016 was as under. - 52 weekends - 30 days of summer vacation which includes 4 weekends - Autumn and Winter Breaks of (10+10) days each inclusive of one weekend - 14 holidays on special occasion out of which one was a Saturday and one Sunday What was the percentage (correct up to two decimal places) of the number of holidays?",
+    "options": [
+      "45.90%",
+      "42.08%",
+      "42.19%",
+      "43.73%"
+    ],
+    "answer": "42.08",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "In a family of 10 adults and a few minors, the average consumption of flour is 12 kg. If the average consumption per adult and minor is 15 and 7 kg respectively.What is the number of minors?(Averages)",
+    "options": [
+      "6",
+      "7",
+      "5",
+      "8"
+    ],
+    "answer": "6",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "A person lends 35% of his sum of money at 12.5% per annum, 50% at the end of 10% per annum and the rest at 18% per annum rate of interest. What would be the annual rate (in approx), if the interest is calculated on the whole sum?(SI & CI) Options",
+    "options": [
+      "13%",
+      "14.5%",
+      "13.5%",
+      "13.75%"
+    ],
+    "answer": "13.475% ~ 13.5%",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "The average weight of 6 people increases from 24 to 31.5 kg when one of them leaves the group and a new person joins in. If the weight of the person who joined is 60 kg, find the weight of the person who left the group?(Average)",
+    "options": [
+      "22.5",
+      "37.5",
+      "15",
+      "30"
+    ],
+    "answer": "15",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "There are three types of alloys A, B and C. The ratio of Copper, Tin and Nickel in A, B and C is 16:3:1 ,15:3:2 and 14:5:1 respectively. If the amount of A, B, and C 10 kg, 15 kg and 50 kg are mixed together respectively. Then, the final ratio of Copper Tin and Nickel in mixture is equal to",
+    "options": [
+      "217 65 18",
+      "217 65 81",
+      "217 56 18",
+      "127 65 18"
+    ],
+    "answer": "A",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "Rahul bought a watch which has Rs. 1,875 as a marked price at a 24% discount. Rahul sold the watch to Rohit earning a 28% profit. Rohit then decided to sell the watch and set the marked price at 25% higher than the cost price at which he bought the watch. Mohit bought the watch from Rohit at a 15% discount on the marked price. Mohit later marked up the price to 50% higher than the cost price at which he bought the watch and sold it to Rahul at some discount. If Rahul had to pay Rs. 28.5 extra than the initial price he paid, then at what percent discount Mohit sold the watch?(Profit and Loss) Options",
+    "options": [
+      "35%",
+      "50%",
+      "45%",
+      "40%"
+    ],
+    "answer": "",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "If a road of 210 km can be constructed by 540 workmen in 28 days, how many workmen are required to build a road of 150 km in 18 days.(Time and Work)",
+    "options": [
+      "600",
+      "300",
+      "650",
+      "450"
+    ],
+    "answer": "600",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "Two stations P and Q are 42 km apart. Rohit and mohit start from P to Q at the speed of 6km/h and 8km/h, respectively mohit reaches Q first and return to meet rohit at R. Determine the distance between P and R in km(Time Speed Distance)",
+    "options": [
+      "30",
+      "36",
+      "33",
+      "27"
+    ],
+    "answer": "36 km",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "The railway platform at a certain station is 248m long. In how many seconds it is cleared by the Express train which is 127 m long and travels at a speed of 150 km/h?(Time Speed Distance)",
+    "options": [
+      "9",
+      "12",
+      "8",
+      "10"
+    ],
+    "answer": "9 seconds",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "Nookaraju and Bhavana have their salaries in 7:3. As Bhavana is skilled, she got an increment of 5,000. But Nookaraju’ performance is not up to mark and he got a decrement of $1,000. If their present salaries are in ratio of 1:1, then Nookaraju’s present salary is: (Ratio and Proportion)",
+    "options": [
+      "8,500",
+      "9,500",
+      "15,000",
+      "10,500"
+    ],
+    "answer": "9500",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "The perimeter of a regular hexagon with area of 21 sqrt 3 cm^2 is: (Mensuration)",
+    "options": [
+      "12 sqrt 3",
+      "6 sqrt 14",
+      "9 sqrt 3",
+      "7 sqrt 15"
+    ],
+    "answer": "Option B - 6 sqrt 14",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": ". If the first quartile = 28 and third quartile = 42 Then the coefficient of quartile deviation is: (Elementary Statistics)",
+    "options": [
+      "1/5",
+      "1/3",
+      "1/4",
+      "1/2"
+    ],
+    "answer": "⅕",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "A farmer purchased a Trolley and a Tractor for 8,00,000. He sold the Tractor at a profit of 30% and the Trolley at a loss of 10%, in this deal he got a profit of 3%. What is the ratio of the cost price of tractor and trolley. (Profit and Loss)",
+    "options": [
+      "54:31",
+      "27:13",
+      "13:27",
+      "13:54"
+    ],
+    "answer": "Option C : 13:27",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "The marked price of a marker is $5\\tfrac{5}{9}$ % higher than it’s cost price. A discount of $5\\tfrac{5}{19}$ % is given on its marked price. Find the difference between cost price and selling price. (Profit and Loss)",
+    "options": [],
+    "answer": "1",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Parts of the given sentence have been given as options. One of them contains a grammatical error. Select the option that has the error. (Error Identification) A university training enables a graduate seeing things as they are, and to disentangle a plethora of thoughts",
+    "options": [
+      "to disentangle a plethora of thoughts",
+      "a graduate seeing things as they are",
+      "to go right to the point",
+      "A university training enables"
+    ],
+    "answer": "a graduate seeing things as they are",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Identify the part of the sentence that has an error - (Error Identification) I like to sit at the window for hours and see children playing in the park Options:",
+    "options": [
+      "I like to sit at",
+      "The window for hours",
+      "In the park",
+      "And see children playing"
+    ],
+    "answer": "And see children playing",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Each sentence contains four underlined phrases. Three of these phases have been correctly used, and one has been incorrectly used. Choose the phrase (from option) which best replaces the wrong phrases in the sentence. (Sentence correction) Explorers embody the finest spirit in human nature which is to seek new challenges, discover new worlds and create new frontiers and one such rare achievement of the indomitable spirit is the ascending of Mount Everest by Hillary and Tenzing. Options",
+    "options": [
+      "Finer spirits",
+      "By the dominant",
+      "To have sought",
+      "The ascent"
+    ],
+    "answer": "the ascent",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Select the most appropriate set of options to fill in the blanks. Bill Gates dropped out from Harvard within a year, Then he formed Microsoft. “Microsoft’s (A) is a computer on every desk and Microsoft software on every computer.” Bill is a visionary and works very hard to (B) his vision. His belief in high intelligence and hard work had put him where he is today. He does not believe in mere luck or God’s grace, but just hard work and (C) . His beliefs are so powerful that they have helped him increase his wealth and establish his (D) in the industry. (Sentence completion)",
+    "options": [
+      "(A)Symbol (B) attain (C)investment (D) control",
+      "(A)target (B) progress(C)frankness (D) importance",
+      "(A)logo(B)believe (C)blessings (D) esteem",
+      "(A)vision (B) achieve (C)competitiveness (D) monopoly"
+    ],
+    "answer": "(A)vision (B) achieve (C)competitiveness (D) monopoly",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Select the most appropriate set of options to fill in the blanks. Mexico is home to more species of oak than any country in the world, though many of them are(1) . In the case of the arroyo oak, as it is known, the species now faces a particularly(2) problem. Though plenty of trees aged more than 100 years can be found, locals(3) that in recent years there had been no seedlings that have sprouted from their acorns in sight. For some reason, the trees had(4) stopped reproducing. (Sentence Completion) Blank 1 A. threaten B. threatened C. threatens D. threatening. Blank 2 A. struggling B. troubling C. grieving D. agitating Blank 3 A. regarded B. recognized C. noticed D. caught Blank 4 A. commonly B. directly C. easily D. simply",
+    "options": [
+      "1-B, 2-B, 3-C, 4-D",
+      "1-A, 2-B, 3-A, 4-D",
+      "1-D, 2-A, 3-B, 4-C",
+      "1-C, 2-D, 3-B, 4-B"
+    ],
+    "answer": "1-B (threatened), 2-B (troubling), 3-C, (noticed) 4-D (simply)",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Choose the most appropriate set of idioms that would fit in the blanks and complete the text given here. (Idioms and phrases) Sadhguru, the famous mystic, made several attempts to improve the nation’s rivers a few years back. The government of India (1) some of his ideas he had incorporated in the union budget. However, his solutions were not received well in (2) . After bearing these criticisms he decided not to provide any more solutions but to focus on the problem itself. His strongest message?. We cannot (3) to the fact that soil is being rejected, whether it is concrete paving, denuding vegetation, use of chemicals etc. The soil is not being given the respect it deserves. He has now (4) of the politicians, the bureaucrats and the technocrats to find and execute solutions, if the mystics of their job and things may become missing . Of what good is the soul without the soul.",
+    "options": [
+      "1. Reflected upon 2. certain quarters 3. Turn a blind eye 4 put the ball in the court",
+      "1. Reflected upon 2. A chunk of 3. Turned the other way 4. Gave up on",
+      "1. Reflected upon 2. A cross section 3. Turned the other way 4. Given up",
+      "1. Thought aloud 2. Certain section 3. Turn a deaf ear 4. Taken a back seat"
+    ],
+    "answer": "1. Reflected upon 2. certain quarters 3. Turn a blind eye 4 put the ball in the court",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Choose the sentence in which the underlined idiom has been used appropriately. (Idioms and phrases)",
+    "options": [
+      "The way Sanya’s obsessing over one doorknob when they’re renovating the entire house",
+      "Marcus is so focused on product details that he can’t see the wood for the trees when it",
+      "The safety officer can’t see the wood for the trees because she doesn’t know which way",
+      "Raman always argues on the silliest topics, it’s like he can’t see the tree for the woods."
+    ],
+    "answer": "B",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Four idioms are given below. Choose their sequence that would fill in the blanks and complete the text here. Instead of the big crowd we expected, people arrived in at the musical night. Alpana Alam is a rising star and is usually able to . Even before the interval it was obvious that the event was . Despite all this, Alpana herself was . (idioms and phrases)",
+    "options": [
+      "A dead duck",
+      "Bring the house down",
+      "Full of beans",
+      "dribs and drabs",
+      "1234",
+      "4231",
+      "4213",
+      "1342"
+    ],
+    "answer": "4213",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Given below is a paragraph with five sentences, which are presented in a jumbled order. Write down the best order which would form a meaningful, unified and coherent paragraph. (Para Jumble)",
+    "options": [
+      "We need to listen and act upon what birds are telling us, as they disappear ever faster of",
+      "Birds truly are the canary in the coal mine - as indicators for the health of our planet,",
+      "Conservation efforts have been successful at rescuing individual species in specific",
+      "Bird populations are affected by the damage caused by human activity, from the"
+    ],
+    "answer": "",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "The four sentence (S1 to S4) paragraph below, Sentences S1 and S4 are given. From the options P, Q, R and S, choose the appropriate sentences for this respectively: (Sentence Arrangement) S1. Placebos are essential to the design of reliable clinical trials. S2. S3. S4. Red, Yellow and orange are associated with a stimulant effect, while blue and green are related to tranquilizing effect; says Dr. A. J. de Craen.",
+    "options": [
+      "Such studies have found that even the color of pills made a difference in placebo results.",
+      "Their once-surprising effect on participants has become the focus of many studies.",
+      "Another argument says that by prescribing a placebo to placate a patient, the correct",
+      "At one time, placebos were only used in experiments as a control",
+      "PS",
+      "PQ",
+      "QP",
+      "QS"
+    ],
+    "answer": "QP",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "Identify the letter- cluster that does not belong to the following series. (Letter Series) CX, GT, EV, DW, HS, ZA, MN, UF",
+    "options": [
+      "ZA",
+      "UF",
+      "HS",
+      "MN"
+    ],
+    "answer": "HS",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "Four pairs of letter-clusters have been given, out which three are alike in some manner and one is different. Select the one that is different. (Letter Analogy)",
+    "options": [
+      "TMKOLFXOY : TOMKLFXOY",
+      "PVMSYGCXN : VSPMYCGNX",
+      "XDSWZOIVK : XWSDZIKOV",
+      "FCHVOTFGW : VHFCOFGTW"
+    ],
+    "answer": "TMKOLFXOY : TOMKLFXOY",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "In a certain code language. - P&Q means P is the son of Q - P @ Q means P is the mother of Q - P % Q means P is the brother of Q - P Q means P is the Husband of Q Based on the above, how is K related to Q if ‘K % G & T V @ S @ N % Q’? (Blood Relations) (correct question)",
+    "options": [
+      "Father",
+      "Father’s brother",
+      "Mother’s brother",
+      "Brother"
+    ],
+    "answer": "Mother’s Brother",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "Following are the criteria for the post of a Seniot Engineer in an electrical company",
+    "options": [
+      "Be in the range of 22 to 35 years as on 8 March 2017",
+      "Be a graduate in Electrical Engineering with at least of 60% marks",
+      "Have passed the recruitment test with a minimum of 70% marks",
+      "Be willing to deposit an amount of Rs 45000 as part of the agreement",
+      "Not to be selected",
+      "Data is incomplete",
+      "To be selected",
+      "Case to be referred to the chairman."
+    ],
+    "answer": "",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "Read the given statement and courses of action carefully and decide which of the given courses of action logically follows: (Statement and Course of action) Statement: Despite the Hostel warnings, the student was caught exploding crackers secretly on the hostel campus during the birthday celebration. Course of actions:-",
+    "options": [
+      "All the crackers should be taken away from the students and they should be threatened",
+      "The students should be severely punished for this wrong act.",
+      "Either I or II follows",
+      "Only II follows",
+      "Neither I not II follows",
+      "Only I follows"
+    ],
+    "answer": "",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "20 years ago Mohita was 22 years old, how old was she X years ago?",
+    "options": [
+      "X - 42",
+      "42",
+      "42-X",
+      "62-X"
+    ],
+    "answer": "",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "A question is given followed by two statements labelled I and II. Identify which of the statements (Statements and Conclusion) Question:- Let p be the total number of males and q be the total number of females in a family. What is the difference between P and Q? Statement:-",
+    "options": [
+      "Vipraja has six daughters, who have a brother, Vipraja is the wife of Shantanu",
+      "Shantanu is the father of six daughters. Kiran’s mother Vipraja is married to Shantanu.",
+      "Statement I alone is sufficient",
+      "Either statement I alone or statement II alone is sufficient",
+      "Both statements I and II together are necessary",
+      "Statement II alone is sufficient",
+      "1<=N<=1000",
+      "N integer",
+      "Only lower case letters of the English alphabet",
+      "Length of A,B = N",
+      "First Input-Accept value of Integer, N.",
+      "Second Input-Accept value of string, A (Next Line)",
+      "Third Input-Accept value of string, B(Next Line)",
+      "The output is an integer as per above logic. (Check the output in Example 1, Example 21",
+      "Additional messages in output will cause the failure of test cases",
+      "System doesn’t allow any kind of hard coded input value/values.",
+      "Written program code by the candidate will be verified against the inputs which are"
+    ],
+    "answer": "Statement I alone is sufficient",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Coding",
+    "question": "Jack is a sports teacher at St. Patrick’s School. He makes games not only to make the student fit, but So smart. So, he lined up all the N numb class. of students in his class. At each position he has fixed a board with the Integer number printed on it. Each of the numbers are unique and are in exactly the range of N. Let us say there are 10 students, then the boards will be printed with numbers from 1 to 10 in a random order given by the sequence A[ ] As a rule, all students wear a jersey with their numbers printed on it. So if there are students, each will have a unique jersey number just like a football team. Now, in the beginning, all the students will stand as per the increasing order of their jersey numbers, from left to right. The only difference will be their respective board number which is placed at their respective location. The board location is fixed and cannot be changed. We can consider the arrangement as below. Suppose there are students, and the board is placed in the order of [2 3 1 5 4] Board - 2, 3, 1, 5, 4 Student’s Jersey - 1, 2, 3, 4, 5 Now the game begins. - After every beat of the drum, each student will have to move to that location (index), where his board is pointing to. In the above case student with jersey 1 is standing with board 2, so now he will have to move to location 2. Similarly, all the other students will do. So after first beat of the drum, the alignment will be: Board - 2, 3, 1, 5, 4 This keeps going on and on, until all the students are back the way they were at the beginning. So, after 6 beats of the drum, all the students will be aligned the same way as before. Given N and the order of board of the respective positions, find the number of beats required to bring back the students to their original position. So, for the above case the answer is 6 Example 1: Input: 3 Input integer, N {1, 2, 3}->Input integer. B[], board alignment. Output: 1 -> Output Explanation: All the students will be standing as board positions; Board - 1, 2, 3 Student’s Jersey -1, 2, 3 After first beat of the drum: Jersey 1 will move to index 1. Jersey 2 will move to index 2. Jersey 3 will move to index 3. Hence, they will be back on their own position in just 1 beat. So, the answer is 1. Example 2: Input: 5- > Input integer, N {2, 3, 1, 5, 4}-> Input integer, B[ ], board alignment. Output: 6- > Output Explanation: All the students will be standing as below, with the board positions: Board - 2, 3, 1, 5, 4 Student’s Jersey - 1, 2, 3, 4, 5 After Beat-1of the drum: Jersey 1 has moved to index 2. Jersey 2 has moved to index 3. Jersey 3 has moved to index 1. Jersey 4 has moved to index 5. Jersey 5 has moved to index 4. Board - 2, 3, 1, 5, 4 Student’ s Jersey - 3, 1, 2, 5, 4 After Beat-2 of the drum: Jersey 3 has moved to index 2. Jersey 1 has moved to index 3. Jersey 2 has moved to index 1. Jersey 5 has moved to index 5. Jersey 4 has moved to index 4. Board - 2, 3, 1, 5, 4 Student’s Jersey - 2, 3, 1, 4, 5 After Beat-3 of the drum: Board - 2, 3, 1, 5, 4 Student’s Jersey - 1, 2, 3, 5, 4 After Beat-4 of the drum: Board - 2, 3, 1, 5, 4 Student’s Jersey - 3, 1, 2, 4, 5 After Beat-5 of the drum: Board - 2, 3, 1, 5, 4 Student’s Jersey - 2, 3, 1, 5, 4 After Beat-6 of the drum: Board - 2, 3, 1, 5, 4 Student’s Jersey - 1, 2, 3, 4, 5 Hence, they will be back on their positions after 6 beats. So, the answer is 6. Constraints: - 1<=N<=100000 - 1 <=A[i] <= N - All A[i] will be distinct numbers - N and. Only Integers. The input format for testing: - First Input - Accept value of In1101 - Next ‘N’ Lines-Elements of sequence A[] C++ #include <bits/stdc++.h> #include using namespace std; int main() { int n; int B[50], arr[50]; cout<<\"Value of n \"; cin>>n; for(int i=0; i<n; i++){ int a; for(int j=n-1; j>0; i++){ cin>>a; B[j]=a; arr[i]=i+1; } } int ans=0; while(true){ ans = ans+1; int ar[n]; for(int i=0; i<n; i++){ ar[i] = arr[B[i]-1]; } if(ar==sort(ar,ar+n)){ break; } arr = arr; cout<<ans; } return 0; } Python n = int(input()) B = [] arr = [] for i in range(n): B.append(int(input())) arr.append(i+1) ans = 0 while 1: ans += 1 ar = [None]*n for i in range(n): ar[i] = arr[B[i]-1] if ar == sorted(ar): break arr = ar print(ans)",
+    "options": [],
+    "answer": "",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "If the equation (1+ 𝛌2 ) x2 + 2𝛌cx + (c2-a2) has equal roots, then a2 (1+ 𝛌2)=",
+    "options": [
+      "c2",
+      "-2",
+      "a2",
+      "-4"
+    ],
+    "answer": "6",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "What is the value of x for the below equation? 4 + 4√x-1 = 2√x+1? Enter the answer in the space provided on the screen using the keyboard. Answer should be in whole number without any symbols (E.g %, kms, ms, ₹ etc.)",
+    "options": [],
+    "answer": "1",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Which of the following points lie in the region of inequations x ≥ 1, y≥ 1 and x+y ≤ 6?",
+    "options": [
+      "(4,2)",
+      "(3,2)",
+      "Both (2,5) & (4, 2)",
+      "(2,5)"
+    ],
+    "answer": "Both (2,5) & (4, 2)",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "The equation (k+3)x2 - 10(k+3)x + 15(k+9)=0, k≠3, has equal roots, then k= Enter the answer in the space provided on the screen using the keyboard. Answer should be in whole number without any symbols (E.g %, kms, ms, ₹ etc.)",
+    "options": [],
+    "answer": "k = 6",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Find the ratio of the average sale of all the branches for the years 2020 and 2021?",
+    "options": [
+      "80:81",
+      "66.5: 81",
+      "88 : 76.5",
+      "76.5 : 82"
+    ],
+    "answer": "76.5 : 82",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "A metallic solid cube of side length 4cm is melted and made into a hallow sphere of internal radius 3cm. What is the external radius of the sphere?",
+    "options": [
+      "(24/𝜋+ 27)1/3",
+      "(48/𝜋+ 27)1/3",
+      "(24/𝜋+ 9)1/3",
+      "(48/𝜋+ 9)1/3"
+    ],
+    "answer": "(48/𝜋+ 27)1/3",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Logical",
+    "question": "The desired description of the role of an actress described by the screenplay is an average-sized lady of age range 45 to 50 years, big body frame, with a grey head, large-sized blue eyes, quite fair skin, smiling face and decently good looking According to the director and casting assistant of the film,there will be no compromise with the resemblance of the character as described in the screenplay, no matter how talented they are. The candidate who appeared for the screen test is a highly appreciated actress who has black hair,big blue eyes,and quite a fair complexion. She is in her thirties and medium build. Will the candidate be selected or not? (Answer: Selected/Not Selected ) Enter the answer in the space provided on the screen using the keyboard. Answer should be in whole numbers without any symbols (e.g %,kms,ms ,etc)",
+    "options": [],
+    "answer": "Not selected (not matching the physical characteristics)",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Logical",
+    "question": "Rani gives 6 numbers to friends 1,2,3,4,5, and 6. All numbers are related to different names i.e 1 is related to Amabad, 2 are Domabad, 3 are Taimabad, 4 are chomabad, 5 pemanad, and 6 are chamabad. 1 is like to chamabad 3 and 4 like to Pemabad. 6 and 1 like to Taimabad, Pemabad, Domabad. Which number like Pemabad and Taimabad but not Chambad?",
+    "options": [],
+    "answer": "6",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Logical",
+    "question": "Eight students namely 1,2,3,4,5,6,7 and 8 are seated around a circle facing the center. 5 is second to the right of 3 who is the third of the of 2. 8 is third to the right of 6 who is not an immediate neighbor of 1. Who is the second to the right of 5?",
+    "options": [],
+    "answer": "MWAAA",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Logical",
+    "question": "A question is given, followed by two statements labelled l and II. Identify which of the statements is/are sufficient to answer the question. Question: In a dance school, the teacher made her five students B, L. P. R and D stand in a row facing the north direction to distribute chocolates. Who among them stood to the immediate left of R? Statements:",
+    "options": [
+      "B stands at one of the extreme ends. L stood between B and P",
+      "Only one student stands between P and D. D is not to the right of L",
+      "Data in statement Il alone is sufficient to answer.",
+      "Neither data in statement I nor II are sufficient to answer.",
+      "Data in statement I alone is sufficient to answer.",
+      "Data in both statements I and II are sufficient to answer."
+    ],
+    "answer": "D",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Logical",
+    "question": "In a certain code language, SUM is coded as NLVTTR and LATE is coded as FDUSZMK. How will ROAST be coded in that language? (Here there should be FDUSZBMK)",
+    "options": [
+      "SQPMBZTRUS",
+      "UTBPSSRZNQ",
+      "USTRBZPNSQ",
+      "ZPNSQUSTRB"
+    ],
+    "answer": "USTRBZPNSQ",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Logical",
+    "question": "A statement is given followed by two arguments numbered I and II. Decide which of the arguments is/are strong with respect to the statement/question. Statement: Each and every institute in india should be linked with an incubation centre Arguments: - Students will be aware of start-ups and how it can benefit the society - Having more and more start-ups will help building economy of the nation",
+    "options": [
+      "Neither argument I nor II strong",
+      "Argument II is strong",
+      "Both arguments I and II are strong.",
+      "Argument I is strong"
+    ],
+    "answer": "Argument I is strong",
+    "source": "TCS-NQT-Paper-1.pdf"
+  },
+  {
+    "section": "Advanced Logical",
+    "question": "A statement is given followed by three arguments numbered I, II and III. Decide which of the arguments is/are strong with respect to the statement/question. Statement: Educational institutes at the school level should encourage extra-curricular activities along with academic teaching Arguments: - Sports is a good career option for a student - Extra-curricular activities enhance learning abilities. - Extra-curricular activities help build a skill",
+    "options": [
+      "Argument I is strong.",
+      "Arguments I, II and III are strong",
+      "Argument III is strong",
+      "Argument II is strong."
+    ],
+    "answer": "D",
+    "source": "TCS-NQT-Paper-1.pdf"
+  }
+]

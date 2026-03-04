@@ -1,0 +1,692 @@
+[
+  {
+    "section": "Numerical Ability",
+    "question": "A wall is of 10m 73cm in length and 6 m 67cm in height, Find the least number of square boxes of equal size required to paint the entire wall completely.",
+    "options": [
+      "851",
+      "861",
+      "855",
+      "865"
+    ],
+    "answer": "Option A - 851",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "What is the maximum number of times that 8/9 can be subtracted from 8, so that the remainder is not less than 3.",
+    "options": [
+      "7",
+      "5",
+      "4",
+      "6"
+    ],
+    "answer": "Option B - 5",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "Out of three numbers, the second is five times the first, and it is also twice the third. If the third number is raised by 8,then the average of three works out to be 31.what is the smallest number?",
+    "options": [
+      "15",
+      "16",
+      "10",
+      "12"
+    ],
+    "answer": "Option D - 10",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "Aslam drives to his office, if he increases his average speed by 12%, then by what percentage ( correct to two decimal places) will his time of travel decrease?",
+    "options": [
+      "10.34",
+      "11.02",
+      "10.71",
+      "12.00"
+    ],
+    "answer": "Option C - 10.71",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "A dealer purchase 15 kg rice at Rs 22 per kg, 12 kg rice at 25 per kg, 18 kg rice at 35 per kg and 8 kg rice at 45 per kg, He mixed al the four types and sold 28 kg at a price of Rs 28 per kg, At what rate he muse sell the remaining rice to earn a profit of 15%",
+    "options": [
+      "35.15 per kg",
+      "38.65 per kg",
+      "43.16 per kg",
+      "40.35 per kg"
+    ],
+    "answer": "Option C - 43.16 per kg",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "The average age of Raghu and Bagha is 60 years which is 15 years more than the average age of Bagha and Tanmay. The average age of raghu and tanmay is 65 years. Daya is 12.5% older than Bagha. What is the age of Daya? Options",
+    "options": [
+      "45",
+      "35",
+      "30",
+      "40"
+    ],
+    "answer": "Option A - 45",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "The university gives 30% of relaxation in fees for those students who secured marks greater than 90%, relaxation of 20% in fees for those who secured 81 to 90% and relaxation of 10% to those who secured 70-80% marks in class. A total of 80 students are in the class. 5% students got 95% marks. 10% students got 90% marks and 20% got 80% marks. The rest of the students got less than 65% marks. If the total fees is Rs.1 lakh per annum, then what is the percentage of relaxation in fees? Options",
+    "options": [
+      "14.6%",
+      "15.7%",
+      "13.5%",
+      "16.8%"
+    ],
+    "answer": "Option B - 15.71%",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "A sum of money, invested for 4years @ 5% simple interests amounted to ₹150 on maturity. What was the sum invested",
+    "options": [
+      "₹120",
+      "₹180",
+      "₹176",
+      "₹125"
+    ],
+    "answer": "Option D - Rs. 125",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "Sangeetha can complete a work in 16days working 10hours per day. Sahithya can complete the same work in 18days working 8 hours per day. If both of them work together working 9 hours per day, in how many days can they complete the work?",
+    "options": [
+      "180/19days",
+      "150/19days",
+      "160/19days",
+      "170/19days"
+    ],
+    "answer": "Option C - 160/19",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "In a class, the ratio of boys and girls is 9:16. If the number of girls is 64% of the class, then the number of boys in the class is: Options",
+    "options": [
+      "10",
+      "9",
+      "16",
+      "11"
+    ],
+    "answer": "9",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "If 1x+1x=417, and 1y+1y=310 then x+1xy+1y=?",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "10",
+      "Rs. 26, 600",
+      "Rs. 25,500",
+      "Rs. 25,000",
+      "Rs. 25, 600"
+    ],
+    "answer": "Option D - 25600",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "A borrowed Rs. 12, 000 from a company at the rate of 12% per annum for 15 years. After a certain period of time the company introduced a scheme which induced the interest rate by 10% . At the end of 15 years, A paid Rs. 18,000 in total then after how much time (in years) did the company introduce the scheme?",
+    "options": [],
+    "answer": "________",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "One year ago the ratio of income between A and B was 3:5. The ratios of income for the previous year and the current year are 2:3 and 5:7. The sum of the income for the both is Rs. 12, 900. Then the current income of each is equal to Options",
+    "options": [
+      "Rs. 7,200 ; Rs. 5,700",
+      "Rs. 3,600 ; Rs. 9,300",
+      "Rs. 8,100 ; Rs. 4,800",
+      "Rs. 5,400 ; Rs. 7,500"
+    ],
+    "answer": "",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "A person completes a journey in 12 hours. He travels the first half of the journey at the rate of 19km/h and the second half at the rate of 21 km/h. What is the total journey in km? Options",
+    "options": [
+      "217.8",
+      "208.4",
+      "239.4",
+      "226.2"
+    ],
+    "answer": "Option C - 239.4",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "A closed box measures externally 90 cm long, 60 cm wide and 45 cm high and it’s made of wood 2.5 cm thick. What is the cost of lining it on the inside with metal at Rs.3 per dm3? Options",
+    "options": [
+      "Rs. 572.50",
+      "Rs. 642. 50",
+      "Rs. 594.50",
+      "Rs. 616. 50"
+    ],
+    "answer": "Option D - 616.50",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "Mohan and Sohan start from P and Q, respectively. Mohan covers a distance from P to Q in 4 hours and Sohan covers a distance from Q to P in 6 hours. Determine the ratio of speed of Mohan and Sohan? Options",
+    "options": [
+      "3:2",
+      "3:5",
+      "2:3",
+      "5:3"
+    ],
+    "answer": "Option A - 3:2",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Numerical Ability",
+    "question": "If the mean deviation is 48:12, the standard deviation of the distribution is empirical relation between mean deviation and standard deviation.",
+    "options": [
+      "61.15",
+      "58.15",
+      "60.15",
+      "59.15"
+    ],
+    "answer": "(70%)",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Parts of the given sentence have been given as options. One of them contains a grammatical error. Select the option that has an error. The reason for his prolonged absence from work was because his father had had a heart attack and was hospitalized.",
+    "options": [
+      "and was hospitalized",
+      "from work was because",
+      "The reason for his prolonged absence",
+      "His father had had a heart attack."
+    ],
+    "answer": "His father had had a heart attack.",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Identify the error in the sentence. Could you please borrow me that non-fiction book you were talking about yesterday?",
+    "options": [
+      "Could you please borrow",
+      "Non-fiction book you",
+      "were talking about yesterday?",
+      "me that informative."
+    ],
+    "answer": "Could you please borrow",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Each sentence contains four underlined phrases. Three of these phrases have been correctly used and one has been incorrectly used. Choose the phrase from the options which best replaces the wrong phrase in the sentence. We went to see him as many times as we could since he was put in very close to our house.",
+    "options": [
+      "Was putting up",
+      "So many times",
+      "Close from",
+      "We should have"
+    ],
+    "answer": "was putting up",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Choose the appropriate idioms to complete the given sentence/s. I was while choosing a gift for my parent’s 50th wedding anniversary. Finally, I was when I saw just the thing for them.",
+    "options": [
+      "In the doldrums; on cloud nine.",
+      "In the doldrums’ under a cloud",
+      "At sea; on cloud nine",
+      "At sea; under a cloud"
+    ],
+    "answer": "C - At sea; on cloud nine",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful passage.",
+    "options": [
+      "Most unsettled sea boundaries go unnoticed unlike land-border conflicts, but the former",
+      "But the recent scramble for offshore resources has expanded fishing and drilling zones,",
+      "Countries calculate their maritime claims according to a simplified outline of their",
+      "For example, during the Brexit negotiations, the British cast fishing rights as essential for",
+      "3,2,1,4",
+      "3,4,2,1",
+      "1,3,4,2",
+      "1,4,3,2"
+    ],
+    "answer": "3214",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Select the most appropriate set of options to fill the blanks. The Metal Man stands in a dark, dusty corner of the Tyburn College Museum. The visitor who gives it a closer view (A) at the silent tragedy in the set, determined expression and at the (B) mark upon the chest. It is a six-sided blot, of a deep crimson hue, with strange pink lines (C) from it. Of course it is generally (D) that the Metal Man was once Professor Thomas Kelvin of the Geology Department.",
+    "options": [
+      "(A) amazed (B) strange (C) spreading (D) planned.",
+      "(A) marvels (B) peculiar (C) radiating (D) known.",
+      "(A) wonders (B) familiar (C) developing (D) received.",
+      "(A) surprise (B) hideous (C) following (D) accepted.",
+      "1. Living in a bird paradise 2. A thorny bed 3. A spade a spade 4. Stumbling stones",
+      "1. Living in a fool’s kingdom 2. A bed of roses 3. A hammer a hammer 4. Crumbling",
+      "1. Living in a fool’s paradise 2. A cake walk 3. A spade a spade 4. Building blocks",
+      "1. Living in a fool’s paradise 2. A bed of roses 3. A spade a spade 4. Stumbling blocks"
+    ],
+    "answer": "1. Living in a fool’s paradise 2. A bed of roses 3. A spade a spade 4.",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Four idioms are given below. Choose their sequence that would fill in the blanks and the complete the text given below. When you start a new job, although you but it takes some time before you feel confident and familiar with the work, the place, and the people. Ideally, an employer recognizes this and allows you to before taking on anything too difficult. But life isn’t always ideal, so you may be , and then you .",
+    "options": [
+      "Find your feet",
+      "Sink or swim",
+      "Thrown in at the deep end",
+      "Bounce off the walls",
+      "1234",
+      "4132",
+      "2413",
+      "4123"
+    ],
+    "answer": "1234",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Choose the most appropriate question to complete the following sentences? Antibiotic-resistant ________ and were first documented just four years after penicillin became widely available. Over the last 20 years, antibiotic resistance _ __________ problems",
+    "options": [
+      "Bacteria rapidly evolved ,has become an increasingly serious",
+      "Bacteria rapidly evolved, has became an increasingly serious",
+      "Rapidly evolved bacteria, has become an increasingly serious",
+      "Rapidly bacteria evolved, has become an increasingly serious"
+    ],
+    "answer": "Bacteria rapidly evolved,has become an increasingly serious",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Substitute one word for the underlined part of the sentence Riddhima talks a lot, when it is inappropriate Options",
+    "options": [
+      "Tacitum",
+      "Loud",
+      "Reticent",
+      "Loquacious"
+    ],
+    "answer": "Loquacious",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Choose the correct meaning for the underlined idiom in the sentence His final argument hit the nail on the head Options",
+    "options": [
+      "Nasty",
+      "Cause Headache",
+      "Exactly to the point",
+      "Reckless"
+    ],
+    "answer": "Exactly to the point",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Choose the most appropriate option to complete the following sentence. Learned behaviors contrast with innate behaviors, and can be performed without any prior experience or training. Of course, some behaviors have elements.",
+    "options": [
+      "Which genetically are hardwired; learned and innate both",
+      "Which are genetically hardwired; both learned and innate",
+      "Which genetically is hardwired; learned and innate both",
+      "Genetically which are hardwired; both learned and innate"
+    ],
+    "answer": "Which are genetically hardwired; both learned and innate",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph",
+    "options": [
+      "Space agencies and private companies have proposed various methods to clean the",
+      "Even when ownership is known, it is not clear who would be responsible if such bodies",
+      "Our skies are becoming increasingly cluttered with large pieces of fast-moving space",
+      "Handling space debris belonging to other countries is a violation of international laws,",
+      "3, 1, 4, 2",
+      "3, 4, 1, 2",
+      "1, 4, 2, 3",
+      "1, 4, 3, 2"
+    ],
+    "answer": "3142",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "For the four sentence (S1 to S4) paragraph below, sentences S1 and S4 are given. From the options P, Q, R, and S. Choose the appropriate sentences for S2 and S3, respectively. S1. A large number of industries have been established in post- independence India in private, public and joint sectors. S2. S3. S4. Whether large scale or small scale, both private and public sectors have grown side by side since independence.",
+    "options": [
+      "They debated titles in favor of the private sector.",
+      "‘Contractualism’ is the new slogan today.",
+      "Bhilai, Bokaro, Rourkela, Ranchi, Jamshedpur, Renukoot, etc emerged as major centres",
+      "However, later on, industrialisation at medium and small scale was taken up in all the",
+      "PR",
+      "RS",
+      "QP",
+      "PS"
+    ],
+    "answer": "RS",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "For the four sentence (S1 to S4) paragraph below, sentences S1 and S4 are given. From the options P, Q, R, and Schoose the appropriate sentences for S2 and S3, respectively. S1: In the Rig Veda, it is said that Yama and Yami the twins were extremely fond of each other and lived an idyllic life on Earth where the day never ended. S2: S3: S4: Not wanting to disturb him, she waited for him to wake up P: When he did not wake up for a long time while, she woke him up. Q: One day when Yami returned home, she found Yama laying under a tree appearing to be asleep R: Yami started to weep with such great sorrow that her tears threatened to flood the world as she missed him tremendously. S: They went where they pleased and did what they wanted",
+    "options": [],
+    "answer": "Answer: SQ",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Among V S Naipaul’s fictional works, The Enigma of Arrival (1987) has emerged as one of his finest books. Its 1. is indistinguishable from the author describing Naipaul’s 2. of studying in London, living in Wiltshire, his neighbors and the landscape around Salisbury. It how he freed himself from the memory of Trinidad and came to find his true self by 4. with English culture. It is an examination of the narrator’s cultural roots, while also being a story of change and death. Blank 1. A. narrator B. storyteller C. reporter D. speaker Blank 2. A. knowledge B. experience C. skill D. adventure Blank 3. A. announces B. informs C. reveals D. confesses Blank 4. A. identify B. identifying C. identified D. identifies Options:",
+    "options": [
+      "(1)-A, (2)-B, (3)-C, (4)-B",
+      "(1)-B, (2)-D, (3)-C, (4)-A",
+      "(1)-C, (2)-B, (3)-A, (4)-B",
+      "(1)-D, (2)-A, (3)-B, (4)-C"
+    ],
+    "answer": "(1)-A, (2)-B, (3)-C, (4)-B",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "My friend is only 25 but he 1. perfectly. He’s single, confident, passionate and ambitious. He’s willing to start 2. and, is not afraid 3. to the grindstone for those 80 hour weeks. He has 4. to start his own business now. Options:",
+    "options": [
+      "1. Fits the bill 2, from a scratch 3. To put his nose to the grindstone 4. Made up his mind",
+      "1. Customized to size 2. From a scratch 3. To nose around everything 4. Made up for",
+      "1. Fetch the bill 2. After scratching his back 3. To his stakes into one basket 4. Made up",
+      "Fits the bill 2. Cut corners 3. To put his head into the grindstone 4. Made up his mind"
+    ],
+    "answer": "1. Fits the bill 2, from a scratch 3. To put his nose to the grindstone 4.",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "Read the given passage and answer the questions that follow: The people of the village, numbering some fifty men, women and children were in the abject terror, and though the sun was still up when I arrived, I found the entire population inside their homes behind locked doors, and it was not until my men had made fire in the country and I was sitting down to a cup of tea that door here and there cautiously opened, and frightened inmates emerged. I was informed that for five days, no one has gone beyond their own doorsteps- the insanitary condition of the courtyard to the truth of this statement- that food was running short, and that the people would starve if the tiger was not killed or driven away. That the tiger was still in the vicinity was apparent. For three nights it had been heard calling on the road, distant a hundred yards from the houses, and that very day it had been seen on the cultivated land at the lower end of the village. The headman of the village willingly placed a room at my disposal, but as there were right to us share it, and the only door it possessed opened on to the insanitary courtyard. I refused to spend the night in the open. After a scratch meal which had to do duty for dinner, I saw my men safely shut into the room and myself took up a position on the side of the road, with my back to a tree. The villagers said the tiger was in the habit of perambulating along this road, and as the moon was at full I thought there was a chance of my getting a shot provided I saw it first. I had spent many nights in the jungle looking for game, but this was the first time I had ever spent a night looking for a man-eater. The length of road immediately in front of me was brilliantly lit by the moon, but to right and left the overhanging trees cast dark shadows, and when the night wind agitated the branches and the shadows moved, I saw a dozen tigers advancing on me, and bitterly regretted the impulse that had induced me to place myself at the man-eater’s mercy. I lacked the courage to return to the village and admit I was too frightened to carry out my self-imposed task, and with teeth chattering, as much from fear as from cold, I sat out the long night. As the grey dawn was lighting up the snowy range which I was facing, I rested my head on my drawn-up knees, and it was in this position my men an hour later found me fast asleep; of the tiger I had neither heard nor seen anything. Which of the following statements does NOT hold good as per the passage? Options",
+    "options": [
+      "The tiger’s incessant calling and close proximity to its visibility nearby on the very day of",
+      "The narrator had an elaborated dinner at his headman’s house and set off to spend the",
+      "The narrator was aware of the danger that he was in when he decided to spend the night",
+      "The people of the small village were terrified because of the man-eater which lurked in"
+    ],
+    "answer": "B",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Verbal Ability",
+    "question": "“I saw a dozen tigers advancing on me…” What caused this to happen and what was the narrator’s reaction?",
+    "options": [
+      "The shadows created by the branches of the trees gave an impression that there were",
+      "The village that the narrator had gone to was infested with tigers which had made life",
+      "The villagers had given a wrong report to the narrator about the existence of a single",
+      "The narrator was terrified at the possibility of spending the night in close proximity to the"
+    ],
+    "answer": "A",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "Identify the letter cluster that does not belong to the given series:- DE19, FH30, IL45, MQ64, RX63, XD62",
+    "options": [
+      "RX63",
+      "IL45",
+      "XD62",
+      "MQ64"
+    ],
+    "answer": "",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "Identify the letter cluster that does not belong to the given series:- PZLP, QWMN, RTNJ, SQOG, TNPD Ans. QWMN Enter the answer in the space provided on the screen. Answer should be in whole numbers without any symbol (XY, %, etc)",
+    "options": [],
+    "answer": "",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "Four letter - cluster pairs have been given, out of which there are alike in some manner and one is different. Select the one that is different.",
+    "options": [
+      "SUYEMW : CAYWQI",
+      "QSWAGN : AWTXDH",
+      "CEIOWG : ASMKIG",
+      "DFJPXH : BTNLJH"
+    ],
+    "answer": "QSWAGN : AWTXDH",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "A statement is given followed by two courses of action numbered I and IL Assuming that everything in the statement is true, decide wc of the logically follow(s). Statement: From last few years people are investing much in cryptocurrency and losing a lot of money. People invest after seeing advertisements of celebrities and in the hope of getting rich quickly. Courses of Action:",
+    "options": [
+      "The government should organise awareness campaign.",
+      "People should make themselves more aware by researching about the cryptocurrency",
+      "Only course of action follows",
+      "Only course of action follows",
+      "Both courses of action I and II follow",
+      "Neither course of action I nor Il follows"
+    ],
+    "answer": "C",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "Study the given information carefully and answer the question that follows In M.A. Social Work final year there are five papers of 100 marks each. Following are the passing criteria in each paper and the course. A student must :-",
+    "options": [
+      "a) secure at least 40 marks in each paper except paper V, where passing marks are 50",
+      "b) pass paper V and at least any 2 other papers to appear (re-appear) again in",
+      "c) Up to 2 grace marks each may be given in any of the two papers or maximum 4 marks",
+      "d) Grace marks equivalent of 2% of the total final year course marks may be given to a",
+      "He must be declared fail in the course",
+      "He must be declared pass in the course.",
+      "He must be asked to re-appear for paper I.",
+      "He must be asked to re-appear for paper Il and V."
+    ],
+    "answer": "He must be declared fail in the course",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "- If A + B means A is the father of B - IF A * B means A is the son-in-law of B - If A / B means B is the brother of A - If A $ B means B is the sister of A - If A B means B is the mother of AWhich two signs should replace the Question mark (?) in the following expression in proper sequence to establish that E is the brother-in-law of J? D * E + F ? G H ? J",
+    "options": [
+      "$ and /",
+      "$ and",
+      "and /",
+      "/ and"
+    ],
+    "answer": "$ and /",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Reasoning Ability",
+    "question": "Two cars started from the same point and at the same time. The first one is going in the east direction at 10 KMPH and the second one is going towards the north direction at a speed of 24 KMPH. How far will the two cars will be from each other after 3 hrs",
+    "options": [
+      "68 kms",
+      "72 kms",
+      "78 kms",
+      "98 km",
+      "Candidates are available for expected post.",
+      "The math facilitators who are teaching to grade XI and XII at present are not skilled.",
+      "Both assumptions I and II are implicit.",
+      "Neither assumptions I nor II is implicit.",
+      "Only Assumption I is implicit",
+      "Only assumption II is implicit"
+    ],
+    "answer": "Only assumption II is implicit",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "The sum of two numbers x and y is 30 and the sum of their reciprocals 1/x and 1/y is 10/63. The numbers are:",
+    "options": [
+      "9, 21",
+      "14, 16",
+      "18, 12",
+      "17, 13"
+    ],
+    "answer": "9, 21",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "There are three violet, four yellow and five orange cards. In how many ways these cards can be arranged such that no two violet cards are adjacent to each other?",
+    "options": [],
+    "answer": "1960; 132",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Let the expressions be 4 < h < 9, 7 < g < 13. If the possible values of g, h lies between a and b, then values a and b satisfies:",
+    "options": [
+      "a + b = 83",
+      "3a + b = 230",
+      "b - a = 89",
+      "5a + 4b = 327",
+      "51.45",
+      "66.67",
+      "49.85",
+      "50.02"
+    ],
+    "answer": "66.67",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "In reference to above table, on sunday if the difference between the time taken by the boat to go upstream and downstream is 12 hours, then the total time taken by the boat to go upstream and downstream together is: (round to one decimal )",
+    "options": [
+      "52.3",
+      "50.3",
+      "45.4",
+      "52.5"
+    ],
+    "answer": "52.5",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "In reference to above table , On saturday, if the ratio of the speed of the stream, to the speed of boat is 2:3 then the difference between the time taken by the boat to go upstream to that of downstream is: (round to one decimal )",
+    "options": [
+      "6.5 hrs",
+      "7.5 hrs",
+      "6 hrs",
+      "4 hrs ‘"
+    ],
+    "answer": "6.5 hrs",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Suppose A and B are the roots of the polynomial 2x2 + 21x - 3 = 0. Find the value of 1/A + 1/B",
+    "options": [],
+    "answer": "7",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Find the ratio of the area of a rectangular hexagon (a 6-gon with equal sides and equal internal angles) and the area of the circle passing through the vertices of the hexagon.",
+    "options": [
+      "2 √3/π",
+      "3 √3/π",
+      "√3/π",
+      "3√3/2π"
+    ],
+    "answer": "3√3/2π",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "If x,y and z are the roots of 3x3 + 2x 2 - 4x - 1, then find the value of (1/x + 1/y + 1/z)(x + y + z) Answer: 8",
+    "options": [],
+    "answer": "",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "A pair of dice is rolled together till a sum of either 6 or 7 is obtained. If x denotes the probability that 7 comes before 6, then the value of x is (correct up to four decimal places)",
+    "options": [
+      "0.7692",
+      "0.8571",
+      "0.8333",
+      "0.5454"
+    ],
+    "answer": "0.8333",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "In a certain code language, ‘BOARD’ is written as ‘114263’. How will ‘DARE’ be written in that language? Enter the answer in the space provided on the screen. Answer should be in whole numbers without any symbols (Eg, %, kms, ms etc)",
+    "options": [
+      "The Government should make it mandatory for political leaders to enroll their child in",
+      "Government should improve the student-teacher ratio.",
+      "Neither course of action I nor II follows",
+      "Only course of action I follows",
+      "Both courses of action I and II follow",
+      "Only course of action II follows"
+    ],
+    "answer": "Only course of action II follows",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Statement is given followed by two course of action numbered I and II. Assuming that everything in the statement is true…..logically follows. Statement:- It is observed in some of the government primary schools that the teachers are not very well educated to teach the children. Course of Action:-",
+    "options": [
+      "The government should remove caste based reservation.",
+      "The government should conduct training program for the teachers at regular interval of",
+      "Both courses of action I and II follow.",
+      "Only course of action I follows",
+      "Only course of action II follows",
+      "Neither course of action I nor II follows"
+    ],
+    "answer": "Only course of action II follows",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "A questions is given, followed by two statements labelled I and II. Identify which of the statements is/are sufficient to answer the question. Questions: In a tutorial, there are six students- Phani, Kiran, Jwalith, Ram, Shyam and Tony of different ages. Who is the oldest among them? Statements:",
+    "options": [
+      "Ram is older than Phani and Jwalith. Ram is younger than Kiran. Shyam is older than only",
+      "Shyam is older than Jwalith but younger than Phani. Tony is older than only Ram. Phani",
+      "Data either in statement I alone or in statement II alone is sufficient to answer the",
+      "Data in both statements I and II together are not sufficient to answer the question",
+      "Data in statement II alone is sufficient to answer the question, while the data in",
+      "Data in statement I alone is sufficient to answer the question, while the data in statement"
+    ],
+    "answer": "Data either in statement I alone or in statement II alone is sufficient to answer the",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "In a certain code language, “FONDLE” is coded as “122610303214”. How will DERAIL be coded in this language?",
+    "options": [
+      "28225401210",
+      "129118512",
+      "141132075",
+      "26204381210"
+    ],
+    "answer": "No. ( Not experienced)",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "In a corona ration queue, 8 people are standing. Jaffar is standing to the left of Raquib but to the right of Pushpa. Omkar is standing to the right of Naresh and the left of Prithvi.. Sanju is standing to the right of Raquib and to the left of Tanu. Pushpa is first and Prithivi is last in the queue. Who is standing to the left of Naresh?",
+    "options": [],
+    "answer": "Raquib",
+    "source": "TCS-NQT-Paper-3.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "In a theatre, nine person - K, L, M, N, O , P, Q , R, S and T are sitting in a straight row facing the screen (north) but not necessarily in the same orfer . M is fourth to the left of Q. P is fourth to the right of K and second to the left of S, who is fifth to the right of N. L is not an immediate neighbor of either S or M. There are only three persons between O and N. Q is second to the right of K. Who among the following sits to the right of R?",
+    "options": [],
+    "answer": "K",
+    "source": "TCS-NQT-Paper-3.pdf"
+  }
+]

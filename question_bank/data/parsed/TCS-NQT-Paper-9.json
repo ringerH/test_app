@@ -1,0 +1,199 @@
+[
+  {
+    "section": "Advanced Quantitative",
+    "question": "- In a xy-plane a particle starts moving from origin (0,0) to a point p(x,y) (x,y are positive, >0) and particle is moving either right side or upwards only (upwards means vertically upward and right side means horizontally right). So, the particle reaches p(x,y) in A way and the number of onto functions possible for a function F if the domain contains m elements and co domain contains n elements is",
+    "options": [
+      "Now given p(4,6), m = 6 and n = 4.",
+      "B>A",
+      "A=B",
+      "None of the given options",
+      "A>B",
+      "λ=4(μ+1)",
+      "λ^2=μ+1",
+      "λ=4(μ+1)^2",
+      "λ^2=4(μ+1)"
+    ],
+    "answer": "Wrong options",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "- If the roots of the equation y^{2} - 4y + c = 0 [\\latex] be two consecutive integers then b^{2} - 4c = [\\latex]",
+    "options": [],
+    "answer": "12",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "- There are 30 teams which are divided into 5 pools having six teams in each pool. In each pool, every team plays exactly one match between two teams of the pool. On the basis of points given on the basis of their performance, the best teams from each pool are selected for the next round. The next round is a knockout round, in this round, matches are fixed in a certain way. To decide the champion team, how many matches are to be played in all in the competition?",
+    "options": [],
+    "answer": "34 matches",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "- How many positive real numbers are there satisfying x < 2 and 3^{x} + \\frac{2}{3^{x - 1}} = 5?[\\latex]",
+    "options": [],
+    "answer": "1",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "- Study the following table and answer the question that follows Key financials of selected private sector Banks. Bank DEP ADV RES EQ NP EPS CMP Axis 568.25 248.45 38.23 3.5 5.61 25.20 890 Kotak Mahindra 465.72 211.62 12.65 2.25 3.60 12.62 480 Yes Bank 2486.50 1555.65 25.23 2.90 21.26 123.22 1725 Bank of India 762.53 378.25 18.08 3.76 2.33 12.22 490 City Union Bank 2655.05 1358.64 59.55 13.06 18.25 15.10 320 South Indian Bank 312.65 141.58 5.72 5.50 0.13 0.39 78 DEP - Deposit RS crore, NP - Net profit, ADV-Advance, EPS-Earning per share, RES- Reserve, CMP-Current Market Price, EQ-Equity, P/E- price per earning Ratio What is the premium on each share of Axis Bank (Premium = CMP - Base price; Base Price = EQ/No.of shares; No. of Shares = NP/EPS)",
+    "options": [
+      "884.1",
+      "854.1",
+      "874.1",
+      "864.1"
+    ],
+    "answer": "Option C - 874.1",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "- Study the following table and answer the question that follows Key financials of selected private sector Banks. Bank DEP ADV RES EQ NP EPS CMP Axis 568.25 248.45 38.23 3.5 5.61 25.20 890 Kotak Mahindra 465.72 211.62 12.65 2.25 3.60 12.62 480 Yes Bank 2486.50 1555.65 25.23 2.90 21.26123.22 123.22 1725 Bank of India 762.53 378.25 18.08 3.76 2.33 12.22 490 City Union Bank 2655.05 1358.64 59.55 13.06 18.25 15.10 320 South Indian Bank 312.65 141.58 5.72 5.50 0.13 0.39 78 DEP - Deposit RS crore, NP - Net profit, ADV-Advance, EPS-Earning per share, RES- Reserve, CMP-Current Market Price, EQ-Equity, P/E- price per earning Ratio Which Bank has the highest CMP to EPS ratio?",
+    "options": [
+      "City Union Bank",
+      "Kotak Mahindra",
+      "Bank of India",
+      "South Indian Bank"
+    ],
+    "answer": "Option D - South Indian Bank",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "-Study the following table and answer the question that follows Key financials of selected private sector Banks. Bank DEP ADV RES EQ NP EPS CMP Axis 568.25 248.45 38.23 3.5 5.61 25.20 890 Kotak Mahindra 465.72 211.62 12.65 2.25 3.60 12.62 480 Yes Bank 2486.50 1555.65 25.23 2.90 21.26123.22 123.22 1725 Bank of India 762.53 378.25 18.08 3.76 2.33 12.22 490 City Union Bank 2655.05 1358.64 59.55 13.06 18.25 15.10 320 South Indian Bank 312.65 141.58 5.72 5.50 0.13 0.39 78 DEP - Deposit RS crore, NP - Net profit, ADV-Advance, EPS-Earning per share, RES- Reserve, CMP-Current Market Price, EQ-Equity, P/E- price per earning Ratio Which bank has the lowest net market value. Net market value = CMP * No.of shares",
+    "options": [
+      "City Union Bank",
+      "Bank of India",
+      "South Indian Bank",
+      "Kotak Mahindra"
+    ],
+    "answer": "Option C - South Indian Bank",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "A statement is given followed by three arguments I, II and III. Decide which of the arguments is/ are strong with respect to the statement question. Statement: People who are not too much poor never prefer to have the education of their children in government primary school. Arguments:",
+    "options": [
+      "Quality of education in government primary schools is very poor.",
+      "Upper Caste people do not want their children to study with lower caste people.",
+      "Infrastructure of government primarily schools is in pathetic conditions.",
+      "Argument III is strong.",
+      "Both arguments I and III are strong",
+      "Argument II is strong",
+      "Argument I is strong"
+    ],
+    "answer": "Argument I is strong",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "A statement is given followed by three arguments I, and II. Decide which of the arguments is/ are strong with respect to the statement question. Statement: Basic nursing training should be part of the curriculum of all school students up to senior secondary level. Arguments:",
+    "options": [
+      "Students will acquire a skill which is very applicable in daily life.",
+      "During a pandemic like situation students can help each other.",
+      "Neither argument I nor argument II is strong.",
+      "Both arguments I and II are strong.",
+      "Argument I is strong.",
+      "Argument II is strong."
+    ],
+    "answer": "Both arguments I and II are strong.",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "In a certain code language DRENCH is written as FSEIDO and COMPETENT is written as NPDUFQUOF. How will HYPOCHONDRIA be written in that language?",
+    "options": [
+      "QZIIDPEOPBJS",
+      "ZIQDPIOPEJSB",
+      "PDIIZQSJBPOE",
+      "OXGGBNCMNZHQ"
+    ],
+    "answer": "QZILDPEOPBJS",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "As per the recruitment advertisement of an organization, the candidates for a particular post need to satisfy the following criteria.",
+    "options": [
+      "Science graduate with 60% marks.",
+      "Age between 25 years to 40 years as of 01 August 2016",
+      "2 years post-qualification work experience.",
+      "The candidate will have to score 55% marks in the selection tests"
+    ],
+    "answer": "not selected",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "In a certain code language, VALU is written as 22A12U. How will DEAF be written in that language?",
+    "options": [],
+    "answer": "4E1F",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "A question is given followed by two statements labeled I and II. Identify which of the statements is/are sufficient to answer the questions. There are five students Ravi, Saketh, Anil, Kalyan and Pavan of different heights. Who among them is the tallest?Statements:-",
+    "options": [
+      "Saketh is taller than Anil and Kalayan but shorter than Pavan who is not the tallest",
+      "Pavan is taller than Sakther and Anil but shorter than Ravi.",
+      "Data in statement I and II together are not sufficient to answer the question",
+      "Data either in statement I alone or in statement II alone is sufficient to answer the",
+      "Data in statement II alone is sufficient to answer the question while the data in",
+      "Data in statement I alone is sufficient to answer the question while the data in statement I"
+    ],
+    "answer": "",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Read the following information carefully and answer the questions given below: A restaurant serves seven different sweets to its customers on Saturday, right after the dinner. The sweets are- Gulab jamun, Sandesh, Modak, Shrikhand, Payassam, Phimi and Ghevar. Dinner is free to select the order of the seven sweets, according to the following conditions.",
+    "options": [
+      "Payasam is served sometime after Shrikhand",
+      "Exactly one sweet should be served between the Sandesh and Modak in the same order.",
+      "Phirni is served some time before Sandeesh",
+      "Payasam is served either fifth or sixth",
+      "Shrikhand is the fifth sweet served",
+      "Sandesh is the fifth sweet served",
+      "Modak is the seventh sweet served",
+      "Phirni is the third sweet served"
+    ],
+    "answer": "Shrikhand is the fifth sweet served",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Study the following information and answer the questions given below Following are the criteria to get a job in a Drug firm. The applicant must:-",
+    "options": [
+      "Have passed graduation with science subject with at least 60% of marks",
+      "Have completed 21 years (male) and 20 years (female) of age as on or before 1st July",
+      "Pay deposit as follows",
+      "If the candidate has secured more than 90% marks at graduation, should be referred to",
+      "In case of SC/STs candidates, the deposit payable is 25% less in each of the above",
+      "If the candidate remits in case the amount of deposit immediately on the date of the first",
+      "If on the date of first call, the amount of deposit by the candidate eligible as per (I) and",
+      "If the candidate can be selected",
+      "If the candidate cannot be selected",
+      "If the candidate can be provisionally selected",
+      "If the candidate should be referred to the Managing Director"
+    ],
+    "answer": "If the candidate can be provisionally selected",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Eight girls X, Y, Z, A, C, T, S and K are sitting around a circular table facing the center. X is sitting second to the left of Z and the third to the right of Y. T and C are immediate neighbors of each other and one of them is an immediate neighbor of X. A is sitting second to the right of S. K is sitting second to the left of T. Which girl is sitting between Y and A?",
+    "options": [],
+    "answer": "K",
+    "source": "TCS-NQT-Paper-9.pdf"
+  },
+  {
+    "section": "Advanced Quantitative",
+    "question": "Five friends participated in the race. Ajmal finished before Lachkam but behind Sultan. Akmal finished before Sohil but behind Munna. Who placed after Sultan?",
+    "options": [],
+    "answer": "Not enough information.",
+    "source": "TCS-NQT-Paper-9.pdf"
+  }
+]
