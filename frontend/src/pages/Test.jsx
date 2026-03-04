@@ -119,6 +119,7 @@ export default function Test({ sessionId, testData, onFinish }) {
             total={activeSection.questions.length}
             selected={answers[activeQuestion.q_id] || null}
             onSelect={handleSelect}
+            section={activeSection.section}
           />
 
           {error && <div style={styles.error}>{error}</div>}
