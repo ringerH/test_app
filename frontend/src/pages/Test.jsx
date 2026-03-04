@@ -7,10 +7,10 @@ import { submitTest } from "../api"
 export default function Test({ sessionId, testData, onFinish }) {
   const [activeSectionIdx, setActiveSectionIdx] = useState(0)
   const [activeQIdx, setActiveQIdx]             = useState(0)
-  const [answers, setAnswers]                   = useState({})   // { q_id: selected_option }
+  const [answers, setAnswers]                   = useState({})
   const [submitting, setSubmitting]             = useState(false)
   const [error, setError]                       = useState(null)
-  const sectionStartTimes                       = useRef({})     // track time per section
+  const sectionStartTimes                       = useRef({})
 
   const sections       = testData.sections
   const activeSection  = sections[activeSectionIdx]
@@ -18,7 +18,6 @@ export default function Test({ sessionId, testData, onFinish }) {
   const totalQuestions = sections.reduce((sum, s) => sum + s.questions.length, 0)
   const totalAnswered  = Object.keys(answers).length
 
-  // Record section start time on first visit
   if (!sectionStartTimes.current[activeSection.section]) {
     sectionStartTimes.current[activeSection.section] = Date.now()
   }
@@ -36,9 +35,9 @@ export default function Test({ sessionId, testData, onFinish }) {
     if (activeQIdx > 0) {
       setActiveQIdx(q => q - 1)
     } else if (activeSectionIdx > 0) {
-      const prevSection = sections[activeSectionIdx - 1]
+      const prev = sections[activeSectionIdx - 1]
       setActiveSectionIdx(s => s - 1)
-      setActiveQIdx(prevSection.questions.length - 1)
+      setActiveQIdx(prev.questions.length - 1)
     }
   }
 
@@ -52,20 +51,16 @@ export default function Test({ sessionId, testData, onFinish }) {
   }
 
   async function handleSubmit() {
-    if (!window.confirm(`Submit test? You've answered ${totalAnswered}/${totalQuestions} questions.`)) return
-
-    // Calculate time spent per section
+    if (!window.confirm(`Submit test? ${totalAnswered}/${totalQuestions} answered.`)) return
     const section_times = {}
     for (const [sec, startTime] of Object.entries(sectionStartTimes.current)) {
       section_times[sec] = Math.floor((Date.now() - startTime) / 1000)
     }
-
-    setSubmitting(true)
-    setError(null)
+    setSubmitting(true); setError(null)
     try {
       const data = await submitTest(sessionId, answers, section_times)
       onFinish(data.result)
-    } catch (e) {
+    } catch {
       setError("Submission failed. Please try again.")
       setSubmitting(false)
     }
@@ -76,24 +71,22 @@ export default function Test({ sessionId, testData, onFinish }) {
                   activeQIdx === activeSection.questions.length - 1
 
   return (
-    <div style={styles.page}>
+    <div className="test-page">
 
-      {/* Top bar */}
-      <div style={styles.topbar}>
-        <span style={styles.topTitle}>TCS NQT Mock Test</span>
+      {/* ── Top bar ── */}
+      <div className="topbar">
+        <span className="top-title">TCS NQT</span>
         <Timer totalSeconds={testData.total_time_mins * 60} onExpire={handleSubmit} />
-        <div style={styles.topRight}>
-          <span style={styles.progress}>{totalAnswered}/{totalQuestions} answered</span>
-          <button style={styles.submitBtn} onClick={handleSubmit} disabled={submitting}>
-            {submitting ? "Submitting..." : "Submit Test"}
+        <div className="top-right">
+          <span className="top-progress">{totalAnswered}/{totalQuestions}</span>
+          <button className="submit-btn" onClick={handleSubmit} disabled={submitting}>
+            {submitting ? "Submitting…" : "Submit"}
           </button>
         </div>
       </div>
 
-      {/* Body */}
-      <div style={styles.body}>
-
-        {/* Left: section nav */}
+      {/* ── Body ── */}
+      <div className="test-body">
         <SectionNav
           sections={sections}
           activeSectionIdx={activeSectionIdx}
@@ -102,17 +95,15 @@ export default function Test({ sessionId, testData, onFinish }) {
           onJump={handleJump}
         />
 
-        {/* Right: question + controls */}
-        <div style={styles.main}>
-
+        <div className="test-main">
           {/* Section label */}
-          <div style={styles.sectionLabel}>
-            <span style={styles.partTag}>{activeSection.part}</span>
-            <span style={styles.sectionName}>{activeSection.section}</span>
-            <span style={styles.sectionTime}>⏱ {activeSection.time_mins} mins</span>
+          <div className="section-label">
+            <span className="part-tag">{activeSection.part}</span>
+            <span className="section-name">{activeSection.section}</span>
+            <span className="section-time">⏱ {activeSection.time_mins}m</span>
           </div>
 
-          {/* Question card */}
+          {/* Question */}
           <QuestionCard
             question={activeQuestion}
             index={activeQIdx}
@@ -122,92 +113,101 @@ export default function Test({ sessionId, testData, onFinish }) {
             section={activeSection.section}
           />
 
-          {error && <div style={styles.error}>{error}</div>}
+          {error && <div className="error-box">{error}</div>}
 
-          {/* Navigation buttons */}
-          <div style={styles.navBtns}>
-            <button style={styles.navBtn} onClick={handlePrev} disabled={isFirst}>← Previous</button>
+          {/* Navigation */}
+          <div className="nav-row">
+            <button className="nav-btn" onClick={handlePrev} disabled={isFirst}>← Prev</button>
             <button
-              style={{ ...styles.navBtn, ...styles.clearBtn }}
+              className="nav-btn clear-btn"
               onClick={() => {
-                const updated = { ...answers }
-                delete updated[activeQuestion.q_id]
-                setAnswers(updated)
+                const u = { ...answers }
+                delete u[activeQuestion.q_id]
+                setAnswers(u)
               }}
-            >
-              Clear
-            </button>
-            <button style={{ ...styles.navBtn, ...styles.nextBtn }} onClick={handleNext} disabled={isLast}>
-              Next →
-            </button>
+            >Clear</button>
+            <button className="nav-btn next-btn" onClick={handleNext} disabled={isLast}>Next →</button>
           </div>
-
         </div>
       </div>
+
+      <style>{`
+        .test-page { min-height: 100vh; background: var(--bg); }
+
+        /* Top bar */
+        .topbar {
+          display: flex; align-items: center; justify-content: space-between;
+          gap: 8px;
+          padding: 10px clamp(12px, 3vw, 28px);
+          background: var(--surface);
+          border-bottom: 1px solid var(--border);
+          position: sticky; top: 0; z-index: 100;
+        }
+        .top-title  { color: var(--text); font-weight: 700; font-size: clamp(13px, 2.5vw, 16px); white-space: nowrap; }
+        .top-right  { display: flex; align-items: center; gap: 8px; }
+        .top-progress { color: var(--muted); font-size: clamp(11px, 2vw, 13px); white-space: nowrap; }
+        .submit-btn {
+          padding: 7px clamp(10px, 2vw, 18px);
+          background: #dc2626; color: #fff;
+          border: none; border-radius: 7px;
+          font-size: clamp(11px, 2vw, 14px); font-weight: 600;
+          white-space: nowrap;
+        }
+        .submit-btn:hover:not(:disabled) { background: #b91c1c; }
+        .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+        /* Body: sidebar + main side by side on desktop, stacked on mobile */
+        .test-body {
+          display: flex;
+          gap: clamp(10px, 2vw, 20px);
+          padding: clamp(12px, 3vw, 24px) clamp(12px, 3vw, 28px);
+          align-items: flex-start;
+        }
+        .test-main {
+          flex: 1;
+          min-width: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+        }
+
+        /* Section label */
+        .section-label { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .part-tag {
+          background: #1e3a5f; color: var(--accent-lt);
+          padding: 3px 10px; border-radius: 5px;
+          font-size: 11px; font-weight: 700; white-space: nowrap;
+        }
+        .section-name { color: var(--text); font-weight: 600; font-size: clamp(13px, 2vw, 15px); }
+        .section-time { color: var(--muted); font-size: 13px; margin-left: auto; }
+
+        /* Nav row */
+        .nav-row { display: flex; gap: 8px; }
+        .nav-btn {
+          flex: 1;
+          padding: clamp(8px, 2vw, 11px) clamp(12px, 2vw, 24px);
+          background: var(--surface);
+          color: var(--soft);
+          border: 1px solid var(--border);
+          border-radius: 8px;
+          font-size: clamp(12px, 2vw, 14px); font-weight: 600;
+        }
+        .nav-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+        .clear-btn { flex: 0; color: var(--red); border-color: #7f1d1d; }
+        .next-btn  { background: #1e3a5f; color: var(--accent-lt); border-color: var(--accent); }
+
+        .error-box {
+          background: #2d1515; color: var(--red);
+          border: 1px solid #7f1d1d; border-radius: 8px;
+          padding: 12px; font-size: 14px;
+        }
+
+        /* Mobile: stack nav on top */
+        @media (max-width: 700px) {
+          .test-body     { flex-direction: column; }
+          .section-time  { display: none; }
+        }
+      `}</style>
     </div>
   )
-}
-
-const styles = {
-  page: { minHeight: "100vh", background: "#0f1117", fontFamily: "'Segoe UI', sans-serif" },
-  topbar: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "14px 28px",
-    background: "#1a1d27",
-    borderBottom: "1px solid #2a2d3e",
-    position: "sticky",
-    top: 0,
-    zIndex: 10,
-  },
-  topTitle: { color: "#f1f5f9", fontWeight: 700, fontSize: "16px" },
-  topRight: { display: "flex", alignItems: "center", gap: "16px" },
-  progress: { color: "#64748b", fontSize: "14px" },
-  submitBtn: {
-    padding: "8px 20px",
-    background: "#dc2626",
-    color: "#fff",
-    border: "none",
-    borderRadius: "8px",
-    fontWeight: 600,
-    fontSize: "14px",
-    cursor: "pointer",
-  },
-  body: {
-    display: "flex",
-    gap: "20px",
-    padding: "24px 28px",
-    alignItems: "flex-start",
-  },
-  main: { flex: 1, display: "flex", flexDirection: "column", gap: "16px" },
-  sectionLabel: {
-    display: "flex",
-    alignItems: "center",
-    gap: "10px",
-  },
-  partTag: {
-    background: "#1e3a5f", color: "#60a5fa",
-    padding: "3px 10px", borderRadius: "5px", fontSize: "12px", fontWeight: 700,
-  },
-  sectionName: { color: "#f1f5f9", fontWeight: 600, fontSize: "15px" },
-  sectionTime: { color: "#64748b", fontSize: "13px", marginLeft: "auto" },
-  navBtns: { display: "flex", gap: "10px" },
-  navBtn: {
-    padding: "10px 24px",
-    background: "#1a1d27",
-    color: "#cbd5e1",
-    border: "1px solid #2a2d3e",
-    borderRadius: "8px",
-    fontSize: "14px",
-    fontWeight: 600,
-    cursor: "pointer",
-  },
-  clearBtn: { marginLeft: "auto", color: "#f87171", borderColor: "#7f1d1d" },
-  nextBtn: { background: "#1e3a5f", color: "#60a5fa", borderColor: "#3b82f6" },
-  error: {
-    background: "#2d1515", color: "#f87171",
-    border: "1px solid #7f1d1d", borderRadius: "8px",
-    padding: "12px", fontSize: "14px",
-  },
 }

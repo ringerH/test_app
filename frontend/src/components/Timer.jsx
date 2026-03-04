@@ -13,14 +13,25 @@ export default function Timer({ totalSeconds, onExpire }) {
   const m = Math.floor((secs % 3600) / 60)
   const s = secs % 60
   const display = h > 0
-    ? `${h}:${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`
-    : `${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`
+    ? `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`
+    : `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`
 
-  const isLow = secs < 300   // under 5 mins → red
+  const isLow = secs < 300
 
   return (
-    <span style={{ color: isLow ? "#f87171" : "#60a5fa", fontWeight: 700, fontSize: "18px", fontVariantNumeric: "tabular-nums" }}>
+    <span className={`timer ${isLow ? "timer--low" : ""}`}>
       ⏱ {display}
+      <style>{`
+        .timer {
+          color: var(--accent-lt);
+          font-weight: 700;
+          font-size: clamp(13px, 3vw, 17px);
+          font-variant-numeric: tabular-nums;
+          white-space: nowrap;
+          letter-spacing: 0.5px;
+        }
+        .timer--low { color: var(--red); }
+      `}</style>
     </span>
   )
 }

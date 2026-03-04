@@ -8,220 +8,293 @@ export default function Results({ result, onHome }) {
     total_questions, accuracy, section_stats, topic_stats, per_question
   } = result
 
-  const [activeTab, setActiveTab] = useState("summary")   // "summary" | "responses"
-  const [filterSection, setFilterSection] = useState("All")
-  const [filterResult, setFilterResult]   = useState("All")
+  const [tab, setTab]             = useState("summary")
+  const [filterSection, setFS]    = useState("All")
+  const [filterResult,  setFR]    = useState("All")
 
-  // Sort topics weakest first
   const topics = Object.entries(topic_stats)
-    .map(([topic, stats]) => ({ topic, ...stats }))
+    .map(([topic, s]) => ({ topic, ...s }))
     .sort((a, b) => a.accuracy - b.accuracy)
 
-  // Sections list for filter
   const sections = ["All", ...Object.keys(section_stats)]
 
-  // Filtered response sheet
-  const filteredQs = (per_question || []).filter(q => {
-    if (filterSection !== "All" && q.section !== filterSection) return false
-    if (filterResult  !== "All" && q.result  !== filterResult)  return false
-    return true
-  })
+  const filtered = (per_question || []).filter(q =>
+    (filterSection === "All" || q.section === filterSection) &&
+    (filterResult  === "All" || q.result  === filterResult)
+  )
 
   return (
-    <div style={styles.page}>
-      <div style={styles.container}>
+    <div className="results-page">
+      <div className="results-container">
 
-        {/* Header */}
-        <div style={styles.header}>
-          <h1 style={styles.title}>Test Complete</h1>
-          <div style={styles.scoreCircle}>
-            <span style={styles.scoreNum}>{total_correct}</span>
-            <span style={styles.scoreTotal}>/{total_questions}</span>
+        {/* Score header */}
+        <div className="results-header">
+          <h1 className="results-title">Test Complete</h1>
+          <div className="score-circle">
+            <span className="score-num">{total_correct}</span>
+            <span className="score-denom">/{total_questions}</span>
           </div>
-          <div style={styles.accuracyBadge}>{accuracy}% accuracy</div>
+          <span className="accuracy-badge">{accuracy}% accuracy</span>
         </div>
 
-        {/* Summary boxes */}
-        <div style={styles.summaryRow}>
-          <StatBox label="Correct" value={total_correct} color="#22c55e" />
-          <StatBox label="Wrong"   value={total_wrong}   color="#f87171" />
-          <StatBox label="Skipped" value={total_skipped} color="#64748b" />
+        {/* Stat boxes */}
+        <div className="stat-row">
+          <StatBox label="Correct" value={total_correct} color="var(--green)" />
+          <StatBox label="Wrong"   value={total_wrong}   color="var(--red)"  />
+          <StatBox label="Skipped" value={total_skipped} color="var(--muted)"/>
         </div>
 
         {/* Tabs */}
-        <div style={styles.tabs}>
-          {["summary", "responses"].map(tab => (
-            <button
-              key={tab}
-              style={{ ...styles.tab, ...(activeTab === tab ? styles.tabActive : {}) }}
-              onClick={() => setActiveTab(tab)}
-            >
-              {tab === "summary" ? "📊 Summary" : "📋 Response Sheet"}
-            </button>
-          ))}
+        <div className="tabs">
+          <button className={`tab ${tab === "summary"   ? "tab--on" : ""}`} onClick={() => setTab("summary")}>
+            📊 Summary
+          </button>
+          <button className={`tab ${tab === "responses" ? "tab--on" : ""}`} onClick={() => setTab("responses")}>
+            📋 Response Sheet
+          </button>
         </div>
 
-        {/* ── SUMMARY TAB ── */}
-        {activeTab === "summary" && (
-          <>
-            <h2 style={styles.sectionHead}>Section Breakdown</h2>
-            <div style={styles.sectionGrid}>
-              {Object.entries(section_stats).map(([section, stats]) => (
-                <div key={section} style={styles.sectionCard}>
-                  <div style={styles.sectionName}>{section}</div>
-                  <div style={styles.sectionAccuracy}>{stats.accuracy}%</div>
-                  <div style={styles.bar}>
-                    <div style={{ ...styles.barFill, width: `${stats.accuracy}%`, background: accuracyColor(stats.accuracy) }} />
-                  </div>
-                  <div style={styles.sectionDetail}>
-                    <span style={{ color: "#22c55e" }}>{stats.correct} correct</span>
-                    <span style={{ color: "#f87171" }}>{stats.wrong} wrong</span>
-                    <span style={{ color: "#64748b" }}>{stats.skipped} skipped</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <h2 style={styles.sectionHead}>
-              Topic Analysis <span style={styles.subHead}>(weakest first)</span>
-            </h2>
-            <div style={styles.topicList}>
-              {topics.map(({ topic, accuracy: acc, correct, total }) => (
-                <div key={topic} style={styles.topicRow}>
-                  <span style={styles.topicName}>{topic}</span>
-                  <div style={styles.topicBar}>
-                    <div style={{ ...styles.topicBarFill, width: `${acc}%`, background: accuracyColor(acc) }} />
-                  </div>
-                  <span style={{ ...styles.topicAcc, color: accuracyColor(acc) }}>{acc}%</span>
-                  <span style={styles.topicCount}>{correct}/{total}</span>
-                </div>
-              ))}
-            </div>
-          </>
-        )}
-
-        {/* ── RESPONSE SHEET TAB ── */}
-        {activeTab === "responses" && (
-          <>
-            {/* Filters */}
-            <div style={styles.filters}>
-              <div style={styles.filterGroup}>
-                <span style={styles.filterLabel}>Section</span>
-                <div style={styles.filterBtns}>
-                  {sections.map(s => (
-                    <button
-                      key={s}
-                      style={{ ...styles.filterBtn, ...(filterSection === s ? styles.filterBtnActive : {}) }}
-                      onClick={() => setFilterSection(s)}
-                    >
-                      {s}
-                    </button>
-                  ))}
+        {/* ── Summary ── */}
+        {tab === "summary" && <>
+          <h2 className="sub-head">Section Breakdown</h2>
+          <div className="section-grid">
+            {Object.entries(section_stats).map(([name, s]) => (
+              <div key={name} className="section-card">
+                <div className="sc-name">{name}</div>
+                <div className="sc-pct" style={{ color: accColor(s.accuracy) }}>{s.accuracy}%</div>
+                <div className="bar"><div className="bar-fill" style={{ width: `${s.accuracy}%`, background: accColor(s.accuracy) }} /></div>
+                <div className="sc-detail">
+                  <span style={{ color: "var(--green)" }}>{s.correct}✓</span>
+                  <span style={{ color: "var(--red)"   }}>{s.wrong}✗</span>
+                  <span style={{ color: "var(--muted)" }}>{s.skipped}–</span>
                 </div>
               </div>
-              <div style={styles.filterGroup}>
-                <span style={styles.filterLabel}>Result</span>
-                <div style={styles.filterBtns}>
-                  {["All", "correct", "wrong", "skipped"].map(r => (
-                    <button
-                      key={r}
-                      style={{
-                        ...styles.filterBtn,
-                        ...(filterResult === r ? styles.filterBtnActive : {}),
-                        ...(r === "correct" ? { borderColor: "#22c55e33" } : {}),
-                        ...(r === "wrong"   ? { borderColor: "#f8717133" } : {}),
-                        ...(r === "skipped" ? { borderColor: "#64748b33" } : {}),
-                      }}
-                      onClick={() => setFilterResult(r)}
-                    >
-                      {r === "correct" ? "✓ Correct" : r === "wrong" ? "✗ Wrong" : r === "skipped" ? "— Skipped" : "All"}
-                    </button>
-                  ))}
-                </div>
+            ))}
+          </div>
+
+          <h2 className="sub-head">Topic Analysis <span className="sub-note">(weakest first)</span></h2>
+          <div className="topic-list">
+            {topics.map(({ topic, accuracy: acc, correct, total }) => (
+              <div key={topic} className="topic-row">
+                <span className="topic-name">{topic}</span>
+                <div className="topic-bar"><div className="topic-fill" style={{ width: `${acc}%`, background: accColor(acc) }} /></div>
+                <span className="topic-pct" style={{ color: accColor(acc) }}>{acc}%</span>
+                <span className="topic-frac">{correct}/{total}</span>
               </div>
-              <span style={styles.filterCount}>
-                Showing {filteredQs.length} of {per_question?.length || 0} questions
-              </span>
-            </div>
+            ))}
+          </div>
+        </>}
 
-            {/* Response cards */}
-            <div style={styles.responseList}>
-              {filteredQs.map((q, idx) => (
-                <ResponseCard key={q.q_id} q={q} idx={idx} />
-              ))}
-              {filteredQs.length === 0 && (
-                <div style={styles.empty}>No questions match the selected filters.</div>
-              )}
+        {/* ── Response Sheet ── */}
+        {tab === "responses" && <>
+          <div className="filters">
+            <div className="filter-row">
+              <span className="filter-label">Section</span>
+              <div className="filter-btns">
+                {sections.map(s => (
+                  <button key={s} className={`filter-btn ${filterSection === s ? "filter-btn--on" : ""}`} onClick={() => setFS(s)}>{s}</button>
+                ))}
+              </div>
             </div>
-          </>
-        )}
+            <div className="filter-row">
+              <span className="filter-label">Result</span>
+              <div className="filter-btns">
+                {["All","correct","wrong","skipped"].map(r => (
+                  <button key={r} className={`filter-btn ${filterResult === r ? "filter-btn--on" : ""}`} onClick={() => setFR(r)}>
+                    {r === "correct" ? "✓ Correct" : r === "wrong" ? "✗ Wrong" : r === "skipped" ? "— Skipped" : "All"}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <span className="filter-count">Showing {filtered.length} of {per_question?.length || 0}</span>
+          </div>
 
-        <button style={styles.homeBtn} onClick={onHome}>← Back to Home</button>
+          <div className="response-list">
+            {filtered.map((q, i) => <ResponseCard key={q.q_id} q={q} i={i} />)}
+            {filtered.length === 0 && <div className="empty">No questions match the filter.</div>}
+          </div>
+        </>}
+
+        <button className="home-btn" onClick={onHome}>← Back to Home</button>
       </div>
+
+      <style>{`
+        .results-page { min-height: 100vh; padding: clamp(16px, 4vw, 32px) clamp(12px, 3vw, 24px); }
+        .results-container { max-width: 820px; margin: 0 auto; }
+
+        .results-header { text-align: center; margin-bottom: 24px; }
+        .results-title { color: var(--text); font-size: clamp(18px, 4vw, 24px); font-weight: 700; margin: 0 0 16px; }
+        .score-circle {
+          display: inline-flex; align-items: baseline; gap: 2px;
+          background: var(--surface); border: 4px solid var(--accent);
+          border-radius: 50%; width: clamp(90px, 20vw, 120px); height: clamp(90px, 20vw, 120px);
+          justify-content: center; margin-bottom: 12px;
+        }
+        .score-num   { color: var(--text);  font-size: clamp(28px, 7vw, 42px); font-weight: 800; }
+        .score-denom { color: var(--muted); font-size: clamp(14px, 4vw, 20px); }
+        .accuracy-badge {
+          display: inline-block;
+          background: #1e3a5f; color: var(--accent-lt);
+          padding: 4px 14px; border-radius: 20px;
+          font-size: 14px; font-weight: 600;
+        }
+
+        .stat-row { display: flex; gap: clamp(8px, 2vw, 16px); margin-bottom: 24px; }
+        .stat-box {
+          flex: 1; background: var(--surface); border: 1px solid var(--border);
+          border-radius: 12px; padding: clamp(12px, 3vw, 20px); text-align: center;
+        }
+        .stat-num   { display: block; font-size: clamp(22px, 5vw, 32px); font-weight: 800; margin-bottom: 4px; }
+        .stat-label { color: var(--muted); font-size: 13px; font-weight: 500; }
+
+        .tabs { display: flex; gap: 8px; margin-bottom: 22px; }
+        .tab {
+          padding: 9px clamp(12px, 3vw, 20px);
+          background: var(--surface); border: 1px solid var(--border);
+          border-radius: 8px; color: var(--muted);
+          font-size: clamp(12px, 2vw, 14px); font-weight: 600;
+        }
+        .tab--on { background: #1e3a5f; border-color: var(--accent); color: var(--accent-lt); }
+
+        .sub-head { color: var(--text); font-size: 15px; font-weight: 700; margin: 0 0 14px; }
+        .sub-note { color: var(--muted); font-weight: 400; font-size: 12px; }
+
+        .section-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+          gap: 12px;
+          margin-bottom: 28px;
+        }
+        .section-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+        .sc-name { color: var(--subtle); font-size: 12px; margin-bottom: 6px; }
+        .sc-pct  { font-size: clamp(18px, 4vw, 22px); font-weight: 800; margin-bottom: 8px; }
+        .bar      { height: 6px; background: var(--border); border-radius: 3px; margin-bottom: 10px; }
+        .bar-fill { height: 100%; border-radius: 3px; }
+        .sc-detail { display: flex; gap: 10px; font-size: 12px; }
+
+        .topic-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 28px; }
+        .topic-row {
+          display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;
+          background: var(--surface); border: 1px solid var(--border);
+          border-radius: 10px; padding: 11px 14px;
+        }
+        .topic-name { color: var(--soft); font-size: 13px; min-width: 0; flex: 1; word-break: break-word; }
+        .topic-bar  { width: clamp(60px, 15vw, 140px); flex-shrink: 0; height: 6px; background: var(--border); border-radius: 3px; }
+        .topic-fill { height: 100%; border-radius: 3px; }
+        .topic-pct  { font-size: 13px; font-weight: 700; white-space: nowrap; min-width: 38px; text-align: right; }
+        .topic-frac { color: var(--muted); font-size: 12px; white-space: nowrap; min-width: 36px; text-align: right; }
+
+        /* Filters */
+        .filters {
+          background: var(--surface); border: 1px solid var(--border);
+          border-radius: 12px; padding: 14px 16px; margin-bottom: 14px;
+          display: flex; flex-direction: column; gap: 10px;
+        }
+        .filter-row  { display: flex; align-items: flex-start; gap: 10px; flex-wrap: wrap; }
+        .filter-label { color: var(--muted); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; padding-top: 5px; min-width: 52px; }
+        .filter-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+        .filter-btn {
+          padding: 4px 10px;
+          background: var(--bg); border: 1px solid var(--border);
+          border-radius: 6px; color: var(--muted);
+          font-size: clamp(11px, 2vw, 13px); font-weight: 500;
+        }
+        .filter-btn--on { background: #1e3a5f; border-color: var(--accent); color: var(--accent-lt); }
+        .filter-count   { color: var(--muted2); font-size: 12px; }
+
+        /* Response cards */
+        .response-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 28px; }
+        .empty         { color: var(--muted); text-align: center; padding: 32px; font-size: 14px; }
+
+        .home-btn {
+          padding: clamp(10px, 2vw, 12px) clamp(18px, 4vw, 28px);
+          background: var(--surface); color: var(--accent-lt);
+          border: 1px solid var(--accent); border-radius: 10px;
+          font-size: 15px; font-weight: 600;
+        }
+
+        @media (max-width: 480px) {
+          .topic-name { font-size: 12px; }
+          .topic-bar  { display: none; }
+        }
+      `}</style>
     </div>
   )
 }
 
-// ── Single response card ──────────────────────────────────────────────────────
-function ResponseCard({ q, idx }) {
-  const [expanded, setExpanded] = useState(false)
+function StatBox({ label, value, color }) {
+  return (
+    <div className="stat-box">
+      <span className="stat-num" style={{ color }}>{value}</span>
+      <span className="stat-label">{label}</span>
+    </div>
+  )
+}
 
-  const borderColor = q.result === "correct" ? "#22c55e44"
-    : q.result === "wrong"   ? "#f8717144"
-    : "#64748b33"
-
-  const bgColor = q.result === "correct" ? "#22c55e08"
-    : q.result === "wrong"   ? "#f8717108"
-    : "#64748b08"
-
-  const icon = q.result === "correct" ? "✓" : q.result === "wrong" ? "✗" : "—"
-  const iconColor = q.result === "correct" ? "#22c55e" : q.result === "wrong" ? "#f87171" : "#64748b"
+function ResponseCard({ q, i }) {
+  const [open, setOpen] = useState(false)
+  const borderColor = q.result === "correct" ? "#22c55e44" : q.result === "wrong" ? "#f8717144" : "#64748b33"
+  const bgColor     = q.result === "correct" ? "#22c55e08" : q.result === "wrong" ? "#f8717108" : "#64748b08"
+  const icon        = q.result === "correct" ? "✓" : q.result === "wrong" ? "✗" : "—"
+  const iconColor   = q.result === "correct" ? "#22c55e"  : q.result === "wrong" ? "#f87171"  : "#64748b"
 
   return (
-    <div style={{ ...styles.responseCard, border: `1px solid ${borderColor}`, background: bgColor }}>
+    <div style={{ border: `1px solid ${borderColor}`, background: bgColor, borderRadius: 10, overflow: "hidden" }}>
+      <div
+        onClick={() => setOpen(o => !o)}
+        style={{ display: "flex", alignItems: "flex-start", gap: 12, padding: "12px 14px", cursor: "pointer" }}
+      >
+        <span style={{
+          width: 26, height: 26, borderRadius: "50%", flexShrink: 0, marginTop: 2,
+          border: `2px solid ${iconColor}44`, background: `${iconColor}11`,
+          color: iconColor, fontWeight: 800, fontSize: 12,
+          display: "flex", alignItems: "center", justifyContent: "center",
+        }}>{icon}</span>
 
-      {/* Collapsed row */}
-      <div style={styles.responseRow} onClick={() => setExpanded(e => !e)}>
-        <span style={{ ...styles.resultIcon, color: iconColor, borderColor: `${iconColor}44`, background: `${iconColor}11` }}>
-          {icon}
-        </span>
-        <div style={styles.responseMain}>
-          <div style={styles.responseMeta}>
-            <span style={styles.responseSection}>{q.section}</span>
-            <span style={styles.responseTopic}>{q.topic}</span>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ display: "flex", gap: 6, marginBottom: 4, flexWrap: "wrap" }}>
+            <span style={{ background: "#1e3a5f", color: "var(--accent-lt)", padding: "1px 7px", borderRadius: 4, fontSize: 11, fontWeight: 600 }}>
+              {q.section}
+            </span>
+            <span style={{ color: "var(--muted2)", fontSize: 11, alignSelf: "center" }}>{q.topic}</span>
           </div>
-          <div style={styles.responseQ}>
-            {q.question || `Question ${idx + 1}`}
+          <div style={{
+            color: "var(--soft)", fontSize: "clamp(12px, 2vw, 14px)", lineHeight: 1.5,
+            overflow: "hidden", textOverflow: "ellipsis",
+            display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical",
+          }}>
+            {q.question}
           </div>
         </div>
-        <span style={styles.expandIcon}>{expanded ? "▲" : "▼"}</span>
+        <span style={{ color: "var(--muted)", fontSize: 10, paddingTop: 6, flexShrink: 0 }}>
+          {open ? "▲" : "▼"}
+        </span>
       </div>
 
-      {/* Expanded: show answers */}
-      {expanded && (
-        <div style={styles.answerArea}>
-          <div style={styles.answerRow}>
-            <span style={styles.answerLabel}>Your answer</span>
+      {open && (
+        <div style={{ padding: "0 14px 12px 52px", display: "flex", flexDirection: "column", gap: 8 }}>
+          {/* Your answer */}
+          <div style={{ display: "flex", gap: 10, alignItems: "flex-start", flexWrap: "wrap" }}>
+            <span style={{ color: "var(--muted)", fontSize: 12, fontWeight: 600, minWidth: 90, paddingTop: 5 }}>Your answer</span>
             <span style={{
-              ...styles.answerValue,
-              color: q.result === "correct" ? "#22c55e" : q.result === "wrong" ? "#f87171" : "#64748b",
-              background: q.result === "correct" ? "#22c55e11" : q.result === "wrong" ? "#f8717111" : "#64748b11",
-              border: `1px solid ${q.result === "correct" ? "#22c55e33" : q.result === "wrong" ? "#f8717133" : "#64748b33"}`,
+              flex: 1, padding: "5px 10px", borderRadius: 6, fontSize: 14, lineHeight: 1.5,
+              color: iconColor, background: `${iconColor}11`, border: `1px solid ${iconColor}33`,
+              wordBreak: "break-word",
             }}>
               {q.user_answer || <em style={{ opacity: 0.5 }}>Not answered</em>}
             </span>
           </div>
+          {/* Correct answer (only if wrong/skipped) */}
           {q.result !== "correct" && q.correct_answer && (
-            <div style={styles.answerRow}>
-              <span style={styles.answerLabel}>Correct answer</span>
-              <span style={{ ...styles.answerValue, color: "#22c55e", background: "#22c55e11", border: "1px solid #22c55e33" }}>
+            <div style={{ display: "flex", gap: 10, alignItems: "flex-start", flexWrap: "wrap" }}>
+              <span style={{ color: "var(--muted)", fontSize: 12, fontWeight: 600, minWidth: 90, paddingTop: 5 }}>Correct</span>
+              <span style={{
+                flex: 1, padding: "5px 10px", borderRadius: 6, fontSize: 14, lineHeight: 1.5,
+                color: "#22c55e", background: "#22c55e11", border: "1px solid #22c55e33",
+                wordBreak: "break-word",
+              }}>
                 {q.correct_answer}
               </span>
-            </div>
-          )}
-          {q.result === "correct" && (
-            <div style={{ color: "#22c55e", fontSize: "13px", marginTop: "4px" }}>
-              ✓ Correct!
             </div>
           )}
         </div>
@@ -230,145 +303,8 @@ function ResponseCard({ q, idx }) {
   )
 }
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
-function StatBox({ label, value, color }) {
-  return (
-    <div style={styles.statBox}>
-      <span style={{ ...styles.statNum, color }}>{value}</span>
-      <span style={styles.statLabel}>{label}</span>
-    </div>
-  )
-}
-
-function accuracyColor(acc) {
-  if (acc >= 70) return "#22c55e"
-  if (acc >= 40) return "#f59e0b"
-  return "#f87171"
-}
-
-// ── Styles ────────────────────────────────────────────────────────────────────
-const styles = {
-  page: {
-    minHeight: "100vh", background: "#0f1117",
-    fontFamily: "'Segoe UI', sans-serif", padding: "32px 24px",
-  },
-  container: { maxWidth: "860px", margin: "0 auto" },
-  header: { textAlign: "center", marginBottom: "28px" },
-  title: { color: "#f1f5f9", fontSize: "24px", fontWeight: 700, margin: "0 0 20px" },
-  scoreCircle: {
-    display: "inline-flex", alignItems: "baseline", gap: "4px",
-    background: "#1a1d27", border: "4px solid #2563eb",
-    borderRadius: "50%", width: "120px", height: "120px",
-    justifyContent: "center", marginBottom: "12px",
-  },
-  scoreNum:   { color: "#f1f5f9", fontSize: "42px", fontWeight: 800 },
-  scoreTotal: { color: "#64748b", fontSize: "20px" },
-  accuracyBadge: {
-    display: "inline-block", background: "#1e3a5f",
-    color: "#60a5fa", padding: "4px 16px",
-    borderRadius: "20px", fontSize: "14px", fontWeight: 600,
-  },
-  summaryRow: { display: "flex", gap: "16px", marginBottom: "28px" },
-  statBox: {
-    flex: 1, background: "#1a1d27", border: "1px solid #2a2d3e",
-    borderRadius: "12px", padding: "20px", textAlign: "center",
-  },
-  statNum:   { display: "block", fontSize: "32px", fontWeight: 800, marginBottom: "4px" },
-  statLabel: { color: "#64748b", fontSize: "13px", fontWeight: 500 },
-
-  // Tabs
-  tabs: { display: "flex", gap: "8px", marginBottom: "24px" },
-  tab: {
-    padding: "10px 20px", background: "#1a1d27",
-    border: "1px solid #2a2d3e", borderRadius: "8px",
-    color: "#64748b", fontSize: "14px", fontWeight: 600, cursor: "pointer",
-  },
-  tabActive: {
-    background: "#1e3a5f", border: "1px solid #3b82f6", color: "#60a5fa",
-  },
-
-  // Summary
-  sectionHead: { color: "#f1f5f9", fontSize: "16px", fontWeight: 700, margin: "0 0 14px" },
-  subHead: { color: "#64748b", fontWeight: 400, fontSize: "13px" },
-  sectionGrid: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginBottom: "32px" },
-  sectionCard: {
-    background: "#1a1d27", border: "1px solid #2a2d3e",
-    borderRadius: "12px", padding: "16px",
-  },
-  sectionName:     { color: "#94a3b8", fontSize: "13px", marginBottom: "6px" },
-  sectionAccuracy: { color: "#f1f5f9", fontSize: "22px", fontWeight: 800, marginBottom: "8px" },
-  bar: { height: "6px", background: "#2a2d3e", borderRadius: "3px", marginBottom: "10px" },
-  barFill: { height: "100%", borderRadius: "3px" },
-  sectionDetail: { display: "flex", gap: "10px", fontSize: "12px" },
-  topicList: { display: "flex", flexDirection: "column", gap: "10px", marginBottom: "32px" },
-  topicRow: {
-    display: "flex", alignItems: "center", gap: "12px",
-    background: "#1a1d27", border: "1px solid #2a2d3e",
-    borderRadius: "10px", padding: "12px 16px",
-  },
-  topicName:    { color: "#cbd5e1", fontSize: "14px", minWidth: "180px" },
-  topicBar:     { flex: 1, height: "6px", background: "#2a2d3e", borderRadius: "3px" },
-  topicBarFill: { height: "100%", borderRadius: "3px" },
-  topicAcc:     { fontSize: "14px", fontWeight: 700, minWidth: "42px", textAlign: "right" },
-  topicCount:   { color: "#64748b", fontSize: "13px", minWidth: "40px", textAlign: "right" },
-
-  // Filters
-  filters: {
-    background: "#1a1d27", border: "1px solid #2a2d3e",
-    borderRadius: "12px", padding: "16px 20px",
-    marginBottom: "16px", display: "flex", flexDirection: "column", gap: "12px",
-  },
-  filterGroup: { display: "flex", alignItems: "center", gap: "10px", flexWrap: "wrap" },
-  filterLabel: { color: "#64748b", fontSize: "12px", fontWeight: 600, minWidth: "60px", textTransform: "uppercase" },
-  filterBtns: { display: "flex", gap: "6px", flexWrap: "wrap" },
-  filterBtn: {
-    padding: "4px 12px", background: "#0f1117",
-    border: "1px solid #2a2d3e", borderRadius: "6px",
-    color: "#64748b", fontSize: "12px", fontWeight: 500, cursor: "pointer",
-  },
-  filterBtnActive: { background: "#1e3a5f", border: "1px solid #3b82f6", color: "#60a5fa" },
-  filterCount: { color: "#475569", fontSize: "12px", marginTop: "4px" },
-
-  // Response sheet
-  responseList: { display: "flex", flexDirection: "column", gap: "8px", marginBottom: "28px" },
-  responseCard: { borderRadius: "10px", overflow: "hidden" },
-  responseRow: {
-    display: "flex", alignItems: "flex-start", gap: "12px",
-    padding: "14px 16px", cursor: "pointer",
-  },
-  resultIcon: {
-    width: "28px", height: "28px", borderRadius: "50%",
-    border: "2px solid", display: "flex", alignItems: "center",
-    justifyContent: "center", fontSize: "13px", fontWeight: 800,
-    flexShrink: 0, marginTop: "2px",
-  },
-  responseMain: { flex: 1, minWidth: 0 },
-  responseMeta: { display: "flex", gap: "8px", marginBottom: "4px", flexWrap: "wrap" },
-  responseSection: {
-    background: "#1e3a5f", color: "#60a5fa",
-    padding: "1px 8px", borderRadius: "4px", fontSize: "11px", fontWeight: 600,
-  },
-  responseTopic: { color: "#475569", fontSize: "11px", alignSelf: "center" },
-  responseQ: {
-    color: "#cbd5e1", fontSize: "14px", lineHeight: 1.5,
-    overflow: "hidden", textOverflow: "ellipsis",
-    display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical",
-  },
-  expandIcon: { color: "#475569", fontSize: "10px", flexShrink: 0, paddingTop: "6px" },
-
-  answerArea: { padding: "0 16px 14px 56px", display: "flex", flexDirection: "column", gap: "8px" },
-  answerRow: { display: "flex", alignItems: "flex-start", gap: "12px" },
-  answerLabel: { color: "#64748b", fontSize: "12px", fontWeight: 600, minWidth: "100px", paddingTop: "6px" },
-  answerValue: {
-    flex: 1, padding: "6px 12px", borderRadius: "6px",
-    fontSize: "14px", lineHeight: 1.5,
-  },
-
-  homeBtn: {
-    padding: "12px 28px", background: "#1a1d27",
-    color: "#60a5fa", border: "1px solid #3b82f6",
-    borderRadius: "10px", fontSize: "15px",
-    fontWeight: 600, cursor: "pointer",
-  },
-  empty: { color: "#475569", textAlign: "center", padding: "40px", fontSize: "14px" },
+function accColor(acc) {
+  if (acc >= 70) return "var(--green)"
+  if (acc >= 40) return "var(--amber)"
+  return "var(--red)"
 }
